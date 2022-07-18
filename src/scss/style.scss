@@ -1,0 +1,547 @@
+$cinzaClaro: #1d1d1d;
+$cinzaEscuro: #171717;
+$azulClaro: #69c6f4;
+$azulEscuro: #007dff;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    background-color: rgb(12, 12, 12);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $azulEscuro;
+    
+}
+
+@mixin titulo() {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 50px;
+    color: $azulClaro;
+    padding: 6px 20px;
+    border-left: 4px solid $azulEscuro;
+    border-right: 4px solid $azulEscuro;
+}
+
+body {
+    background-color: $cinzaClaro;
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+    background-size: 1000px;
+    overflow: hidden;
+}
+
+p {
+    color: white;
+}
+
+header {
+    background-color: $cinzaEscuro;
+    height: 100px;
+
+    #navbarbtn {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.15);
+        position: fixed;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        border-radius: 50%;
+        margin: 30px;
+        padding: 10px 16px;
+
+        .linha {
+            position: relative;
+            background-color: $azulEscuro;
+            margin: 8px 0;
+            height: 3px;
+            width: 28px;
+        }
+    }
+
+    nav {
+        height: 100%;
+
+        ul {
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            li {
+                font-size: 21px;
+                margin: 0 40px;
+                padding: 5px;
+                cursor: pointer;
+
+                a {
+                    color: $azulClaro;
+                }
+            }
+        }
+    }
+}
+
+#sobre {
+    display: flex;
+    justify-content: space-around;
+    margin: 90px;
+
+    img {
+        width: 330px;
+    }
+
+    h2 {
+        font-size: 50px;
+        margin-top: 30px;
+        font-weight: normal;
+        color: $azulEscuro;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: normal;
+        margin: 4px 0 27px;
+        color: $azulClaro;
+    }
+    p {
+        font-size: 1.1em;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    #btnBox {
+        text-align: center;
+
+        #btn {
+            display: inline-block;
+            font-size: 1.1em;
+            background-color: $cinzaClaro;
+            color: white;
+            border: 2px solid $azulEscuro;
+            padding: 10px;
+            border-radius: 30px;
+            width: 180px;
+            margin: 45px 0;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $azulEscuro;
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+#projetos {
+    margin-bottom: 90px;
+    text-align: center;
+
+    h2 {
+        @include titulo();
+    }
+
+    #container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .box {
+            text-align: center;
+            width: 350px;
+            margin: 30px;
+
+            h3 {
+                font-size: 25px;
+                font-weight: normal;
+                margin-bottom: 20px;
+                color: white;
+            }
+
+            img {
+                width: 350px;
+                border-radius: 10px;
+                margin-bottom: 12px;
+            }
+
+            p {
+            min-height: 60px;
+            }
+
+            button {
+                
+                background-color: $cinzaClaro;
+                color: white;
+                font-size: 15px;
+                margin: 20px 15px;
+                padding: 8px 18px;
+                border-radius: 30px;
+                border: 2px solid $azulEscuro;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $azulEscuro;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+#linguagensEFerramentas {
+    text-align: center;
+
+    h2 {
+        @include titulo();
+    }
+
+    #linguagens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 100px;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            span {
+                font-size: 1.4em;
+                color: white;
+            }
+
+            i {
+                margin: 15px 10px 0;
+                font-size: 70px;
+                padding: 32px;
+                border-radius: 50%;
+                background-color: rgba(0, 0, 0, 0.233);
+            }
+        }
+    }
+
+    #ferramentas {
+        @extend #linguagens;
+
+        .devicon-github-original {
+            color: white;
+        }
+    }
+}
+
+#contato {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 30px;
+
+    h2 {
+        @include titulo();
+    }
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+
+            i {
+                margin: 10px;
+                display: flex;
+                align-items: center;
+
+                span {
+                    display: inline-block;
+                    background-color: $azulClaro;
+                    border-radius: 50%;
+                    padding: 20px;
+                    height: 32px;
+                    font-size: 2em;
+                    color: $cinzaClaro;
+                }
+
+                a {
+                    color: white;
+                    margin-left: 16px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            text-align: right;
+            margin-top: 40px;
+
+            #nome {
+                background-color: $cinzaClaro;
+                margin-bottom: 10px;
+                border: 2px solid $azulEscuro;
+                padding: 10px;
+                border-radius: 8px;
+                height: 30px;
+                color: white;
+
+                &::placeholder {
+                    color: white;
+                    opacity: 1;
+                }
+            }
+
+            #email {
+                @extend #nome;
+            }
+
+            #msg {
+                @extend #nome;
+                height: 130px;
+            }
+
+            button {
+                background-color: $cinzaClaro;
+                color: white;
+                width: 130px;
+                font-size: 15px;
+                margin: 20px 15px;
+                padding: 8px 18px;
+                border-radius: 30px;
+                border: 2px solid $azulEscuro;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $azulEscuro;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+// header
+
+@media (min-width: 1131px) {
+    body {
+        overflow: auto;
+    }
+}
+
+@media (max-width: 1130px) {
+    header {
+        background-color: #00000000;
+        height: fit-content;
+
+        #navbarbtn {
+            display: block;
+            z-index: 2;
+        }
+
+        #navbarbtn.ativo {
+            #l1 {
+                opacity: 0;
+                transition: 0.3s ease-in-out;
+            }
+
+            #l2 {
+                padding: 0;
+                margin: 0;
+                transform: rotate(-135deg);
+                transition: 0.2s ease-in-out;
+            }
+
+            #l3 {
+                padding: 0;
+                margin: 0;
+                transform: rotate(135deg);
+                top: -3px;
+                transition: 0.3s ease-in-out;
+            }
+        }
+
+        nav {
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 0;
+            visibility: hidden;
+            transition: 0.5s;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+            ul {
+                height: 75vh;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: baseline;
+                margin-top: 15vh;
+
+                li {
+                    width: 60%;
+                    padding: 0;
+                    
+                    a {
+                        display: inline-block;
+                        width: 100%;
+                        padding: 30px;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                    }
+                }
+            }
+        }
+
+        nav.ativo {
+            visibility: visible;
+            width: 50vw;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    header nav.ativo {
+        width: 100vw;
+    }
+}
+
+// sobre
+
+@media (max-width: 1130px) {
+    #sobre {
+        text-align: center;
+        flex-direction: column;
+        margin: 35px;
+
+        img {
+            width: 200px;
+        }
+
+        h3 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #sobre {
+        h2 {
+            font-size: 33px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+    }
+}
+
+//titulos
+
+@media (max-width: 600px) {
+    #projetos h2,
+    #lef h2,
+    #contato h2 {
+        font-size: 33px;
+    }
+}
+
+//projetos 
+
+@media (max-width: 840px) {
+    #projetos #container .box {
+        width: 80vw;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+button {
+                
+    background-color: $cinzaClaro;
+    color: white;
+    font-size: 15px;
+    margin: 20px 15px;
+    padding: 8px 18px;
+    border-radius: 30px;
+    border: 2px solid $azulEscuro;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $azulEscuro;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 395px) {
+    #projetos #container .box button {
+        font-size: 13px;
+        margin: 20px 10px;
+    }
+}
+
+// linguagens
+
+@media (max-width: 900px) {
+    #linguagensEFerramentas {
+        #linguagens {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 124px);
+            gap: 10px;
+            padding: 20px;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                span {
+                    font-size: 1.1em;
+                    color: white;
+                }
+
+                i {
+                    margin: 15px 10px;
+                    font-size: 50px;
+                    padding: 27px;
+                    border-radius: 50%;
+                    background-color: rgba(0, 0, 0, 0.233);
+                }
+            }
+        }
+    }
+}
+
+// contato
+
+@media (max-width: 980px) {
+    #contato div nav {
+        display: flex;
+        width: 600px;
+    }
+}
