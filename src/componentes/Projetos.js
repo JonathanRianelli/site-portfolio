@@ -3,7 +3,7 @@ import crud from "../img/crud.gif";
 import clima from "../img/clima.png";
 import pokedex from "../img/pokedex.gif";
 import calculadora from "../img/calculadora.gif";
-import landingPage from "../img/landing-page.gif";
+import jogoDaVelha from "../img/jogo-da-velha.png";
 
 export default function Projetos() {
 
@@ -32,6 +32,13 @@ export default function Projetos() {
                     <button onClick={() =>abrirUrl('https://github.com/JonathanRianelli/projeto-crud')}>Repositório</button>
                 </div>
                 <div className="box">
+                    <h3>Jogo da Velha</h3>
+                    <img src={jogoDaVelha} alt="Landing Page" />
+                    <p>Jogo da velha com placar, feito em React com Typescript e styled-components</p>
+                    <button onClick={() =>abrirUrl('https://jonathanrianelli.github.io/jogo-da-velha/')}>Acessar site</button>
+                    <button onClick={() =>abrirUrl('https://github.com/JonathanRianelli/jogo-da-velha')}>Repositório</button>
+                </div>
+                <div className="box">
                     <h3>Previsão do Tempo</h3>
                     <img src={clima} alt="Previsão do tempo" />
                     <p>Ferramenta de previsão do tempo desenvolvida em React, utilizando a API OpenWeatherMap.</p>
@@ -51,13 +58,6 @@ export default function Projetos() {
                     <p>Calculadora simples, criada com a intenção de praticar meu JavaScript.</p>
                     <button onClick={() =>abrirUrl('https://github.com/JonathanRianelli/calculadora-js')}>Acessar site</button>
                     <button onClick={() =>abrirUrl('https://jonathanrianelli.github.io/calculadora-js/')}>Repositório</button>
-                </div>
-                <div className="box">
-                    <h3>Landing Page</h3>
-                    <img src={landingPage} alt="Landing Page" />
-                    <p>Uma Landing Page criada junto com Dev em Dobro.</p>
-                    <button onClick={() =>abrirUrl('https://jonathanrianelli.github.io/projeto-landing-page/')}>Acessar site</button>
-                    <button onClick={() =>abrirUrl('https://github.com/JonathanRianelli/projeto-landing-page')}>Repositório</button>
                 </div>
             </div>
         </section>

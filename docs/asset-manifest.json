@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/site-portfolio/static/css/main.9910d979.css",
-    "main.js": "/site-portfolio/static/js/main.92ab3464.js",
+    "main.js": "/site-portfolio/static/js/main.acbbb12f.js",
     "static/js/787.8e198dab.chunk.js": "/site-portfolio/static/js/787.8e198dab.chunk.js",
-    "static/media/landing-page.gif": "/site-portfolio/static/media/landing-page.246eeed1a2c75482a8a4.gif",
     "static/media/hotel.gif": "/site-portfolio/static/media/hotel.e892f7d522c4d5b954ce.gif",
     "static/media/pokedex.gif": "/site-portfolio/static/media/pokedex.12424e273c5cdfbb6e67.gif",
     "static/media/crud.gif": "/site-portfolio/static/media/crud.a719aaac62d9ce26c882.gif",
     "static/media/perfil.png": "/site-portfolio/static/media/perfil.1c858b74285f50287032.png",
-    "static/media/Curriculo.pdf": "/site-portfolio/static/media/Curriculo.80460a82eff252d7bcf6.pdf",
+    "static/media/Curriculo.pdf": "/site-portfolio/static/media/Curriculo.1b4ac57466f894e54f16.pdf",
     "static/media/calculadora.gif": "/site-portfolio/static/media/calculadora.710eca9e96f46a344ad1.gif",
+    "static/media/jogo-da-velha.png": "/site-portfolio/static/media/jogo-da-velha.a53cfefb5370b705661e.png",
     "static/media/clima.png": "/site-portfolio/static/media/clima.9e3bce31603316526a0a.png",
     "index.html": "/site-portfolio/index.html",
     "main.9910d979.css.map": "/site-portfolio/static/css/main.9910d979.css.map",
-    "main.92ab3464.js.map": "/site-portfolio/static/js/main.92ab3464.js.map",
+    "main.acbbb12f.js.map": "/site-portfolio/static/js/main.acbbb12f.js.map",
     "787.8e198dab.chunk.js.map": "/site-portfolio/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9910d979.css",
-    "static/js/main.92ab3464.js"
+    "static/js/main.acbbb12f.js"
   ]
 }
