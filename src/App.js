@@ -1,5 +1,6 @@
 import "./scss/style.scss";
 import { Fragment } from 'react';
+import "swiper/css/pagination";
 import Header from "./componentes/Header";
 import Sobre from "./componentes/Sobre";
 import Projetos from "./componentes/Projetos";
