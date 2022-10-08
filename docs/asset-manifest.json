@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/site-portfolio/static/css/main.e92593c7.css",
-    "main.js": "/site-portfolio/static/js/main.fed97e06.js",
+    "main.js": "/site-portfolio/static/js/main.520bbf5c.js",
     "static/js/787.8e198dab.chunk.js": "/site-portfolio/static/js/787.8e198dab.chunk.js",
     "static/media/hotel.gif": "/site-portfolio/static/media/hotel.e892f7d522c4d5b954ce.gif",
     "static/media/pokedex.gif": "/site-portfolio/static/media/pokedex.12424e273c5cdfbb6e67.gif",
@@ -11,13 +11,14 @@
     "static/media/calculadora.gif": "/site-portfolio/static/media/calculadora.710eca9e96f46a344ad1.gif",
     "static/media/jogo-da-velha.png": "/site-portfolio/static/media/jogo-da-velha.a53cfefb5370b705661e.png",
     "static/media/clima.png": "/site-portfolio/static/media/clima.9e3bce31603316526a0a.png",
+    "static/media/styled-components-icon.png": "/site-portfolio/static/media/styled-components-icon.332ccc5f60b29b18e1a8.png",
     "index.html": "/site-portfolio/index.html",
     "main.e92593c7.css.map": "/site-portfolio/static/css/main.e92593c7.css.map",
-    "main.fed97e06.js.map": "/site-portfolio/static/js/main.fed97e06.js.map",
+    "main.520bbf5c.js.map": "/site-portfolio/static/js/main.520bbf5c.js.map",
     "787.8e198dab.chunk.js.map": "/site-portfolio/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e92593c7.css",
-    "static/js/main.fed97e06.js"
+    "static/js/main.520bbf5c.js"
   ]
 }

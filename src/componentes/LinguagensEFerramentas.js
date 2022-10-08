@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css'
 import { Pagination } from "swiper";
+import styled from "../img/styled-components-icon.png";
 
 export default function LinguagensEFerramentas() {
 
@@ -56,7 +57,7 @@ export default function LinguagensEFerramentas() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <span>Styled-Components</span>
-                    <img src="https://static-00.iconduck.com/assets.00/styled-components-icon-512x223-72cqvkty.png" alt="Styled-Components" />
+                    <img src={styled} alt="Styled-Components" />
                 </SwiperSlide>
             </Swiper>
 
