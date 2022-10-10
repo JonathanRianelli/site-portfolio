@@ -56,8 +56,8 @@ export default function Projetos() {
                     <h3>calculadora</h3>
                     <img src={calculadora} alt="calculadora" />
                     <p>Calculadora simples, criada com a intenção de praticar meu JavaScript.</p>
-                    <button onClick={() =>abrirUrl('https://github.com/JonathanRianelli/calculadora-js')}>Acessar site</button>
-                    <button onClick={() =>abrirUrl('https://jonathanrianelli.github.io/calculadora-js/')}>Repositório</button>
+                    <button onClick={() =>abrirUrl('https://jonathanrianelli.github.io/calculadora-js/')}>Acessar site</button>
+                    <button onClick={() =>abrirUrl('https://github.com/JonathanRianelli/calculadora-js')}>Repositório</button>
                 </div>
             </div>
         </section>
