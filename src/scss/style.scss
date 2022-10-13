@@ -242,11 +242,12 @@ header {
                     background-color: rgba(0, 0, 0, 0.233);
                 }
     
-                img {
+                svg {
                     @extend i;
                     width: 70px;
                     height: 70px;
                     object-fit: contain;
+                    color: #fff;
                 }
             }
     }
@@ -532,7 +533,7 @@ button {
                         padding: 27px;
                     }
 
-                    img {
+                    svg {
                         width: 50px;
                         height: 50px;
                     }
@@ -558,7 +559,7 @@ button {
                     padding: 22px;
                 }
     
-                img {
+                svg {
                     width: 40px;
                     height: 40px;
                 }

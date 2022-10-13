@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { SiStyledcomponents } from "react-icons/si";
 import 'swiper/css'
 import { Pagination } from "swiper";
-import styled from "../img/styled-components-icon.png";
 
 export default function LinguagensEFerramentas() {
 
@@ -57,7 +57,8 @@ export default function LinguagensEFerramentas() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <span>Styled-Components</span>
-                    <img src={styled} alt="Styled-Components" />
+                    <SiStyledcomponents/>
+                    {/* <img src={styled} alt="Styled-Components" /> */}
                 </SwiperSlide>
             </Swiper>
 
