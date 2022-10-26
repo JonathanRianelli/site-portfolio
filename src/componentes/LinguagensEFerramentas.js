@@ -36,6 +36,10 @@ export default function LinguagensEFerramentas() {
                     <i class="devicon-react-original colored"></i>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <span>Vue.js</span>
+                    <i class="devicon-vuejs-plain colored"></i>
+                </SwiperSlide>
+                <SwiperSlide>
                     <span>JavaScript</span>
                     <i class="devicon-javascript-plain colored"></i>
                 </SwiperSlide>
@@ -57,7 +61,7 @@ export default function LinguagensEFerramentas() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <span>Styled-Components</span>
-                    <SiStyledcomponents/>
+                    <SiStyledcomponents />
                     {/* <img src={styled} alt="Styled-Components" /> */}
                 </SwiperSlide>
             </Swiper>
