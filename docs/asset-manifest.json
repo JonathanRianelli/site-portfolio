@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/site-portfolio/static/css/main.d25452db.css",
-    "main.js": "/site-portfolio/static/js/main.805ceec7.js",
+    "main.js": "/site-portfolio/static/js/main.9a90fd9c.js",
     "static/js/787.8e198dab.chunk.js": "/site-portfolio/static/js/787.8e198dab.chunk.js",
     "static/media/hotel.gif": "/site-portfolio/static/media/hotel.e892f7d522c4d5b954ce.gif",
-    "static/media/pokedex.gif": "/site-portfolio/static/media/pokedex.12424e273c5cdfbb6e67.gif",
     "static/media/crud.gif": "/site-portfolio/static/media/crud.a719aaac62d9ce26c882.gif",
     "static/media/perfil.png": "/site-portfolio/static/media/perfil.1c858b74285f50287032.png",
     "static/media/Curriculo.pdf": "/site-portfolio/static/media/Curriculo.1b4ac57466f894e54f16.pdf",
+    "static/media/pokedex.gif": "/site-portfolio/static/media/pokedex.378189c693c7f401c595.gif",
     "static/media/calculadora.gif": "/site-portfolio/static/media/calculadora.710eca9e96f46a344ad1.gif",
     "static/media/jogo-da-velha.png": "/site-portfolio/static/media/jogo-da-velha.a53cfefb5370b705661e.png",
     "static/media/clima.png": "/site-portfolio/static/media/clima.9e3bce31603316526a0a.png",
     "index.html": "/site-portfolio/index.html",
     "main.d25452db.css.map": "/site-portfolio/static/css/main.d25452db.css.map",
-    "main.805ceec7.js.map": "/site-portfolio/static/js/main.805ceec7.js.map",
+    "main.9a90fd9c.js.map": "/site-portfolio/static/js/main.9a90fd9c.js.map",
     "787.8e198dab.chunk.js.map": "/site-portfolio/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d25452db.css",
-    "static/js/main.805ceec7.js"
+    "static/js/main.9a90fd9c.js"
   ]
 }

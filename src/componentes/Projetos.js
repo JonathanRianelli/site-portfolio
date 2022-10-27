@@ -32,6 +32,13 @@ export default function Projetos() {
                     <button onClick={() =>abrirUrl('https://github.com/JonathanRianelli/projeto-crud')}>Repositório</button>
                 </div>
                 <div className="box">
+                    <h3>Pokédex</h3>
+                    <img src={pokedex} alt="Pokédex" />
+                    <p>Projeto desenvolvido em Vue.js, utilizando a PókeAPI.</p>
+                    <button onClick={() =>abrirUrl('https://jonathanrianelli.github.io/pokedex-api/')}>Acessar site</button>
+                    <button onClick={() =>abrirUrl('https://github.com/JonathanRianelli/pokedex-api')}>Repositório</button>
+                </div>
+                <div className="box">
                     <h3>Jogo da Velha</h3>
                     <img src={jogoDaVelha} alt="Landing Page" />
                     <p>Jogo da velha com placar, feito em React com Typescript e styled-components</p>
@@ -44,13 +51,6 @@ export default function Projetos() {
                     <p>Ferramenta de previsão do tempo desenvolvida em React, utilizando a API OpenWeatherMap.</p>
                     <button onClick={() =>abrirUrl('https://jonathanrianelli.github.io/previsao-do-tempo/')}>Acessar site</button>
                     <button onClick={() =>abrirUrl('https://github.com/JonathanRianelli/previsao-do-tempo')}>Repositório</button>
-                </div>
-                <div className="box">
-                    <h3>Pokédex</h3>
-                    <img src={pokedex} alt="Pokédex" />
-                    <p>Uma pokédex criada junto com Dev em Dobro.</p>
-                    <button onClick={() =>abrirUrl('https://jonathanrianelli.github.io/pokedex/')}>Acessar site</button>
-                    <button onClick={() =>abrirUrl('https://github.com/JonathanRianelli/pokedex')}>Repositório</button>
                 </div>
                 <div className="box">
                     <h3>calculadora</h3>
