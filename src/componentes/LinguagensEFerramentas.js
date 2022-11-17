@@ -102,6 +102,14 @@ export default function LinguagensEFerramentas() {
                     <i class="devicon-github-original"></i>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <span>NPM</span>
+                    <i class="devicon-npm-original-wordmark colored"></i>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <span>Yarn</span>
+                    <i class="devicon-yarn-plain colored"></i>
+                </SwiperSlide>
+                <SwiperSlide>
                     <span>Photoshop</span>
                     <i class="devicon-photoshop-line colored"></i>
                 </SwiperSlide>
