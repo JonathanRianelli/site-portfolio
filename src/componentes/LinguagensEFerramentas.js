@@ -60,9 +60,16 @@ export default function LinguagensEFerramentas() {
                     <i class="devicon-typescript-plain colored"></i>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <span>Node.js</span>
+                    <i class="devicon-nodejs-plain colored"></i>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <span>MySQL</span>
+                    <i class="devicon-mysql-plain colored"></i>
+                </SwiperSlide>
+                <SwiperSlide>
                     <span>Styled-Components</span>
                     <SiStyledcomponents />
-                    {/* <img src={styled} alt="Styled-Components" /> */}
                 </SwiperSlide>
             </Swiper>
 
