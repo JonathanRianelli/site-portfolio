@@ -1,4 +1,5 @@
 import {FaLinkedinIn, FaGithub, FaWhatsapp, FaEnvelope} from "react-icons/fa";
+import "../styles/contato.scss";
 
 export default function Contato() {
 

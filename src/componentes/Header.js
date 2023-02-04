@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "../styles/header.scss";
 
 export default function Header() {
 

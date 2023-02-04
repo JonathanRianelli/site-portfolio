@@ -1,0 +1,134 @@
+$cinzaClaro: #1d1d1d;
+$cinzaEscuro: #171717;
+$azulClaro: #69c6f4;
+$azulEscuro: #007dff;
+
+#projetos {
+    margin-bottom: 90px;
+    text-align: center;
+
+    h2 {
+        display: inline-block;
+        font-size: 40px;
+        font-weight: normal;
+        margin-bottom: 50px;
+        color: $azulClaro;
+        padding: 6px 20px;
+        border-left: 4px solid $azulEscuro;
+        border-right: 4px solid $azulEscuro;
+    }
+
+    #container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .box {
+            text-align: center;
+            width: 350px;
+            margin: 30px;
+
+            h3 {
+                font-size: 25px;
+                font-weight: normal;
+                margin-bottom: 20px;
+                color: white;
+            }
+
+            .img-box {
+                display: flex;
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+                
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .linguagens-usadas {
+                    position: absolute;
+                    bottom: 0;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    background-color: #000000d2;
+                    opacity: 0;
+                    transition: 0.4s ease-in-out;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    span {
+                        font-size: 2em;
+                    }
+
+                    svg {
+                        color: white;
+                    }
+                }
+            }
+
+            p {
+                margin-top: 13px;
+                min-height: 60px;
+            }
+
+            button {
+                background-color: $cinzaClaro;
+                color: white;
+                font-size: 15px;
+                margin: 20px 15px;
+                padding: 8px 18px;
+                border-radius: 30px;
+                border: 2px solid $azulEscuro;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $azulEscuro;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+
+            .botao-repositorio {
+                width: 240px;
+            }
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    #projetos #container .box {
+        width: 80vw;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+button {
+    background-color: $cinzaClaro;
+    color: white;
+    font-size: 15px;
+    margin: 20px 15px;
+    padding: 8px 18px;
+    border-radius: 30px;
+    border: 2px solid $azulEscuro;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $azulEscuro;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 395px) {
+    #projetos #container .box button {
+        font-size: 13px;
+        margin: 20px 10px;
+    }
+}

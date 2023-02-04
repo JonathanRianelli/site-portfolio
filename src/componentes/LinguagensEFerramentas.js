@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { SiStyledcomponents } from "react-icons/si";
 import 'swiper/css'
 import { Pagination } from "swiper";
+import "../styles/linguagenseferramentas.scss";
 
 export default function LinguagensEFerramentas() {
 

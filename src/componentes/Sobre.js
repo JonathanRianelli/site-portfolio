@@ -1,5 +1,6 @@
 import perfil from "../img/perfil.png";
 import curriculo from "../arquivos/Curriculo.pdf";
+import "../styles/sobre.scss";
 
 export default function Sobre() {
 

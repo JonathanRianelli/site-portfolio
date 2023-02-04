@@ -1,0 +1,58 @@
+$cinzaClaro: #1d1d1d;
+$cinzaEscuro: #171717;
+$azulClaro: #69c6f4;
+$azulEscuro: #007dff;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    background-color: rgb(12, 12, 12);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $azulEscuro;
+    
+}
+
+@mixin titulo() {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 50px;
+    color: $azulClaro;
+    padding: 6px 20px;
+    border-left: 4px solid $azulEscuro;
+    border-right: 4px solid $azulEscuro;
+}
+
+body {
+    background-color: $cinzaClaro;
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+    background-size: 1000px;
+    overflow: hidden;
+}
+
+p {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #projetos h2,
+    #lef h2,
+    #contato h2 {
+        font-size: 33px;
+    }
+}

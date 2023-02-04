@@ -1,0 +1,135 @@
+$cinzaClaro: #1d1d1d;
+$cinzaEscuro: #171717;
+$azulClaro: #69c6f4;
+$azulEscuro: #007dff;
+
+header {
+    background-color: $cinzaEscuro;
+    height: 100px;
+
+    #navbarbtn {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.15);
+        position: fixed;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        border-radius: 50%;
+        margin: 30px;
+        padding: 10px 16px;
+
+        .linha {
+            position: relative;
+            background-color: $azulEscuro;
+            margin: 8px 0;
+            height: 3px;
+            width: 28px;
+        }
+    }
+
+    nav {
+        height: 100%;
+
+        ul {
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            li {
+                font-size: 21px;
+                margin: 0 40px;
+                padding: 5px;
+                cursor: pointer;
+
+                a {
+                    color: $azulClaro;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1131px) {
+    body {
+        overflow: auto;
+    }
+}
+
+@media (max-width: 1130px) {
+    header {
+        background-color: #00000000;
+        height: fit-content;
+
+        #navbarbtn {
+            display: block;
+            z-index: 2;
+        }
+
+        #navbarbtn.ativo {
+            #l1 {
+                opacity: 0;
+                transition: 0.3s ease-in-out;
+            }
+
+            #l2 {
+                padding: 0;
+                margin: 0;
+                transform: rotate(-135deg);
+                transition: 0.2s ease-in-out;
+            }
+
+            #l3 {
+                padding: 0;
+                margin: 0;
+                transform: rotate(135deg);
+                top: -3px;
+                transition: 0.3s ease-in-out;
+            }
+        }
+
+        nav {
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 0;
+            visibility: hidden;
+            transition: 0.5s;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+            ul {
+                height: 75vh;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: baseline;
+                margin-top: 15vh;
+
+                li {
+                    width: 60%;
+                    padding: 0;
+                    
+                    a {
+                        display: inline-block;
+                        width: 100%;
+                        padding: 30px;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                    }
+                }
+            }
+        }
+
+        nav.ativo {
+            visibility: visible;
+            width: 50vw;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    header nav.ativo {
+        width: 100vw;
+    }
+}

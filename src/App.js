@@ -1,4 +1,4 @@
-import "./scss/style.scss";
+import "./styles/global.scss";
 import { Fragment } from 'react';
 import "swiper/css/pagination";
 import Header from "./componentes/Header";
