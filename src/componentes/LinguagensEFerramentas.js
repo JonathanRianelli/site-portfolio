@@ -37,6 +37,14 @@ export default function LinguagensEFerramentas() {
                     <i class="devicon-react-original colored"></i>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <span>Node.js</span>
+                    <i class="devicon-nodejs-plain colored"></i>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <span>MySQL</span>
+                    <i class="devicon-mysql-plain colored"></i>
+                </SwiperSlide>
+                <SwiperSlide>
                     <span>Vue.js</span>
                     <i class="devicon-vuejs-plain colored"></i>
                 </SwiperSlide>
@@ -59,14 +67,6 @@ export default function LinguagensEFerramentas() {
                 <SwiperSlide>
                     <span>Typescript</span>
                     <i class="devicon-typescript-plain colored"></i>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <span>Node.js</span>
-                    <i class="devicon-nodejs-plain colored"></i>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <span>MySQL</span>
-                    <i class="devicon-mysql-plain colored"></i>
                 </SwiperSlide>
                 <SwiperSlide>
                     <span>Styled-Components</span>

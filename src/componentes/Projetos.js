@@ -52,10 +52,9 @@ export default function Projetos() {
                     <div className="img-box">
                         <img src={pokedex} alt="Pokédex" />
                         <div className="linguagens-usadas">
-                            <span class="devicon-html5-plain colored"></span>
+                            <span className="devicon-vuejs-plain colored"></span>
                             <span class="devicon-css3-plain colored"></span>
                             <span class="devicon-javascript-plain colored"></span>
-                            <span className="devicon-vuejs-plain colored"></span>
                         </div>
                     </div>
                     <p>Projeto desenvolvido em Vue.js, utilizando a PókeAPI.</p>
@@ -84,7 +83,7 @@ export default function Projetos() {
                         <div className="linguagens-usadas">
                             <span className="devicon-react-original colored"></span>
                             <SiStyledcomponents />
-                            <span class="devicon-javascript-plain colored"></span>
+                            <span class="devicon-typescript-plain colored"></span>
                         </div>
                     </div>
                     <p>Jogo da velha com placar, feito em React com Typescript e styled-components</p>
