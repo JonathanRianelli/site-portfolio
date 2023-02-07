@@ -44,7 +44,7 @@ export default function Projetos() {
                             <span className="devicon-mysql-plain colored"></span>
                         </div>
                     </div>
-                    <p>Projeto desenvolvido em React, Node.js e MySQL.</p>
+                    <p>Projeto Fullstack desenvolvido para praticar Node.js e MySQL.</p>
                     <button className="botao-repositorio" onClick={() => abrirUrl('https://github.com/JonathanRianelli/todo-mysql')}>Repositório</button>
                 </div>
                 <div className="box">
