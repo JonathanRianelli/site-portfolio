@@ -41,6 +41,10 @@ export default function LinguagensEFerramentas() {
                     <i class="devicon-nodejs-plain colored"></i>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <span>Express</span>
+                    <i class="devicon-express-original colored"></i>
+                </SwiperSlide>
+                <SwiperSlide>
                     <span>MySQL</span>
                     <i class="devicon-mysql-plain colored"></i>
                 </SwiperSlide>
