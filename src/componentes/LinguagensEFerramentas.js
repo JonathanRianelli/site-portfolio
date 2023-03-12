@@ -33,7 +33,7 @@ export default function LinguagensEFerramentas() {
                 }}
             >
                 <SwiperSlide>
-                    <span>React</span>
+                    <span>React.js/Native</span>
                     <i class="devicon-react-original colored"></i>
                 </SwiperSlide>
                 <SwiperSlide>
