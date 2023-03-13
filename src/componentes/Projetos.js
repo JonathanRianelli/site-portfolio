@@ -29,7 +29,7 @@ export default function Projetos() {
                             <span class="devicon-javascript-plain colored"></span>
                         </div>
                     </div>
-                    <p>Projeto criado por mim para demonstrar meus conhecimentos em Front End.</p>
+                    <p>Projeto Front End para aprimorar habilidades de design e desenvolvimento web.</p>
                     <button onClick={() => abrirUrl('https://jonathanrianelli.github.io/site-hotel-responsivo/')} id="hbtn">Acessar site</button>
                     <button onClick={() => abrirUrl('https://github.com/JonathanRianelli/site-hotel-responsivo')}>Repositório</button>
                 </div>
