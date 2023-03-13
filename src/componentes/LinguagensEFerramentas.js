@@ -111,7 +111,7 @@ export default function LinguagensEFerramentas() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <span>GitHub</span>
-                    <i class="devicon-github-original"></i>
+                    <i class="devicon-github-original" style={{color: "white"}}></i>
                 </SwiperSlide>
                 <SwiperSlide>
                     <span>NPM</span>
