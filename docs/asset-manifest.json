@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/site-portfolio/static/css/main.682672ff.css",
-    "main.js": "/site-portfolio/static/js/main.d97a8312.js",
+    "main.css": "/site-portfolio/static/css/main.49bbd77c.css",
+    "main.js": "/site-portfolio/static/js/main.75b2477f.js",
     "static/js/787.8e198dab.chunk.js": "/site-portfolio/static/js/787.8e198dab.chunk.js",
-    "static/media/hotel.gif": "/site-portfolio/static/media/hotel.e892f7d522c4d5b954ce.gif",
-    "static/media/perfil.png": "/site-portfolio/static/media/perfil.dcf48539da03ac5795c5.png",
-    "static/media/todo.gif": "/site-portfolio/static/media/todo.e4b0b7357e94ebce8d1f.gif",
+    "static/media/hotel.webp": "/site-portfolio/static/media/hotel.a4d88aa2c4a697fec305.webp",
+    "static/media/perfil.webp": "/site-portfolio/static/media/perfil.3b4eac907b56eaaa8d2e.webp",
+    "static/media/crud.webp": "/site-portfolio/static/media/crud.16b4d315f03cd6b1e852.webp",
     "static/media/curriculo.pdf": "/site-portfolio/static/media/curriculo.7dead66601086dfd2083.pdf",
-    "static/media/crud.gif": "/site-portfolio/static/media/crud.a719aaac62d9ce26c882.gif",
-    "static/media/pokedex.gif": "/site-portfolio/static/media/pokedex.378189c693c7f401c595.gif",
-    "static/media/jogo-da-velha.png": "/site-portfolio/static/media/jogo-da-velha.a53cfefb5370b705661e.png",
-    "static/media/clima.png": "/site-portfolio/static/media/clima.9e3bce31603316526a0a.png",
+    "static/media/todo.webp": "/site-portfolio/static/media/todo.7b8cfa2d62b9d1cf564a.webp",
+    "static/media/pokedex.webp": "/site-portfolio/static/media/pokedex.5947f4227ebae506e451.webp",
+    "static/media/clima.webp": "/site-portfolio/static/media/clima.1a218c80494427940c98.webp",
     "static/media/textura15.png": "/site-portfolio/static/media/textura15.4392677c9d079a6b583c.png",
+    "static/media/jogo-da-velha.webp": "/site-portfolio/static/media/jogo-da-velha.5534bd6b00453934ecc8.webp",
     "index.html": "/site-portfolio/index.html",
-    "main.682672ff.css.map": "/site-portfolio/static/css/main.682672ff.css.map",
-    "main.d97a8312.js.map": "/site-portfolio/static/js/main.d97a8312.js.map",
+    "main.49bbd77c.css.map": "/site-portfolio/static/css/main.49bbd77c.css.map",
+    "main.75b2477f.js.map": "/site-portfolio/static/js/main.75b2477f.js.map",
     "787.8e198dab.chunk.js.map": "/site-portfolio/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.682672ff.css",
-    "static/js/main.d97a8312.js"
+    "static/css/main.49bbd77c.css",
+    "static/js/main.75b2477f.js"
   ]
 }

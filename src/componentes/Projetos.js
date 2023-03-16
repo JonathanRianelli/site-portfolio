@@ -1,9 +1,9 @@
-import todo from "../img/todo.gif";
-import hotel from "../img/hotel.gif";
-import crud from "../img/crud.gif";
-import clima from "../img/clima.png";
-import pokedex from "../img/pokedex.gif";
-import jogoDaVelha from "../img/jogo-da-velha.png";
+import todo from "../img/projetos/todo.webp";
+import hotel from "../img/projetos/hotel.webp";
+import crud from "../img/projetos/crud.webp";
+import clima from "../img/projetos/clima.webp";
+import pokedex from "../img/projetos/pokedex.webp";
+import jogoDaVelha from "../img/projetos/jogo-da-velha.webp";
 import "../styles/projetos.scss";
 import { SiStyledcomponents } from "react-icons/si";
 

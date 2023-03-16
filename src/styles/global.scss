@@ -46,6 +46,10 @@ body {
     overflow: hidden;
 }
 
+button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
 p {
     color: white;
 }
@@ -57,3 +61,4 @@ p {
         font-size: 33px;
     }
 }
+

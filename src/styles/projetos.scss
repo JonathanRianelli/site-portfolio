@@ -41,7 +41,7 @@ $azulEscuro: #007dff;
                 position: relative;
                 overflow: hidden;
                 
-                img {
+                img, video {
                     width: 100%;
                     height: auto;
                 }
@@ -106,7 +106,7 @@ $azulEscuro: #007dff;
     #projetos #container .box {
         width: 80vw;
 
-        img {
+        img, video {
             width: 100%;
         }
     }

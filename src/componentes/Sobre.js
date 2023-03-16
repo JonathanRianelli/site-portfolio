@@ -1,4 +1,4 @@
-import perfil from "../img/perfil.png";
+import perfil from "../img/perfil.webp";
 import curriculo from "../arquivos/curriculo.pdf";
 import "../styles/sobre.scss";
 
