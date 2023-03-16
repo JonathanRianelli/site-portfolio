@@ -79,7 +79,7 @@ export default function Projetos() {
                 <div className="box">
                     <h3>Jogo da Velha</h3>
                     <div className="img-box">
-                        <img src={jogoDaVelha} alt="Landing Page" />
+                        <img src={jogoDaVelha} alt="Jogo Da Velha" />
                         <div className="linguagens-usadas">
                             <span className="devicon-react-original colored"></span>
                             <SiStyledcomponents />
