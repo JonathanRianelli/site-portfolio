@@ -29,7 +29,7 @@ export default function Projetos() {
                             <span class="devicon-javascript-plain colored"></span>
                         </div>
                     </div>
-                    <p>Projeto Front End para aprimorar habilidades de design e desenvolvimento web.</p>
+                    <p>Este projeto foi criado para demonstrar minhas habilidades em desenvolvimento Front End. Através dele, pude explorar conceitos avançados de HTML, CSS e JavaScript, bem como aprimorar minhas habilidades de design e usabilidade.</p>
                     <button onClick={() => abrirUrl('https://jonathanrianelli.github.io/site-hotel-responsivo/')} id="hbtn">Acessar site</button>
                     <button onClick={() => abrirUrl('https://github.com/JonathanRianelli/site-hotel-responsivo')}>Repositório</button>
                 </div>
@@ -44,7 +44,7 @@ export default function Projetos() {
                             <span className="devicon-mysql-plain colored"></span>
                         </div>
                     </div>
-                    <p>Projeto Fullstack desenvolvido para praticar Node.js e MySQL.</p>
+                    <p>O projeto Fullstack visa aprimorar as habilidades de desenvolvimento de aplicações web utilizando tecnologias como React.js, Node.js e MySQL. Ele permite explorar os conceitos fundamentais de desenvolvimento Fullstack, criando uma aplicação web completa desde o backend até o frontend.</p>
                     <button className="botao-repositorio" onClick={() => abrirUrl('https://github.com/JonathanRianelli/todo-mysql')}>Repositório</button>
                 </div>
                 <div className="box">
@@ -57,7 +57,7 @@ export default function Projetos() {
                             <span class="devicon-javascript-plain colored"></span>
                         </div>
                     </div>
-                    <p>Projeto desenvolvido em Vue.js, utilizando a PókeAPI.</p>
+                    <p>Este projeto é uma aplicação web desenvolvida em Vue.js, que utiliza a PókeAPI como fonte de dados para exibir informações sobre Pokémon. Através da aplicação, o usuário pode pesquisar por Pokémon específicos, bem como visualizar informações detalhadas sobre cada um deles, incluindo habilidades, estatísticas, tipos e muito mais.</p>
                     <button onClick={() => abrirUrl('https://jonathanrianelli.github.io/pokedex-api/')}>Acessar site</button>
                     <button onClick={() => abrirUrl('https://github.com/JonathanRianelli/pokedex-api')}>Repositório</button>
 
@@ -72,7 +72,7 @@ export default function Projetos() {
                             <span class="devicon-javascript-plain colored"></span>
                         </div>
                     </div>
-                    <p>Projeto que usa local storage para armazenar as informações dos clientes.</p>
+                    <p>Este projeto foi desenvolvido com o objetivo de criar um sistema simples de gerenciamento de clientes que utiliza o recurso de local storage do navegador para armazenar as informações dos usuários. Através do projeto, é possível adicionar, visualizar, editar e excluir informações de clientes de forma fácil e intuitiva.</p>
                     <button onClick={() => abrirUrl('https://jonathanrianelli.github.io/projeto-crud/')}>Acessar site</button>
                     <button onClick={() => abrirUrl('https://github.com/JonathanRianelli/projeto-crud')}>Repositório</button>
                 </div>
@@ -86,7 +86,7 @@ export default function Projetos() {
                             <span class="devicon-typescript-plain colored"></span>
                         </div>
                     </div>
-                    <p>Jogo da velha com placar, feito em React com Typescript e styled-components</p>
+                    <p>Este é um projeto que consiste em um jogo da velha com placar, desenvolvido em React com Typescript e styled-components. A aplicação apresenta uma interface amigável e intuitiva, permitindo que o usuário jogue o jogo da velha com facilidade e visualizando o placar em tempo real.</p>
                     <button onClick={() => abrirUrl('https://jonathanrianelli.github.io/jogo-da-velha/')}>Acessar site</button>
                     <button onClick={() => abrirUrl('https://github.com/JonathanRianelli/jogo-da-velha')}>Repositório</button>
                 </div>
@@ -100,7 +100,7 @@ export default function Projetos() {
                             <span class="devicon-javascript-plain colored"></span>
                         </div>
                     </div>
-                    <p>Ferramenta de previsão do tempo desenvolvida em React, utilizando a API OpenWeatherMap.</p>
+                    <p>Este é um projeto de uma ferramenta de previsão do tempo, desenvolvido em React, que utiliza a API OpenWeatherMap como fonte de dados. A aplicação permite que o usuário pesquise por uma cidade específica e exibe informações atualizadas sobre a temperatura, sensação térmica, umidade e velocidade do vento.</p>
                     <button onClick={() => abrirUrl('https://jonathanrianelli.github.io/previsao-do-tempo/')}>Acessar site</button>
                     <button onClick={() => abrirUrl('https://github.com/JonathanRianelli/previsao-do-tempo')}>Repositório</button>
                 </div>
