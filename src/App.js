@@ -13,7 +13,7 @@ export default function App() {
   return (
     <Fragment>
       <Helmet>
-        <title>Minha Página</title>
+        <title>Jonathan Rianelli</title>
         <meta name="description" content="Explore meu portfólio de programação e descubra o que posso fazer para levar seu projeto ao próximo nível. Como um programador habilidoso, estou sempre buscando maneiras de desenvolver soluções inovadoras e eficientes. Confira meus projetos anteriores e entre em contato para discutir como podemos colaborar para alcançar seus objetivos." />
       </Helmet>
       <Header />

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/site-portfolio/static/css/main.49bbd77c.css",
-    "main.js": "/site-portfolio/static/js/main.75b2477f.js",
+    "main.js": "/site-portfolio/static/js/main.a7972082.js",
     "static/js/787.8e198dab.chunk.js": "/site-portfolio/static/js/787.8e198dab.chunk.js",
     "static/media/hotel.webp": "/site-portfolio/static/media/hotel.a4d88aa2c4a697fec305.webp",
     "static/media/perfil.webp": "/site-portfolio/static/media/perfil.3b4eac907b56eaaa8d2e.webp",
@@ -14,11 +14,11 @@
     "static/media/jogo-da-velha.webp": "/site-portfolio/static/media/jogo-da-velha.5534bd6b00453934ecc8.webp",
     "index.html": "/site-portfolio/index.html",
     "main.49bbd77c.css.map": "/site-portfolio/static/css/main.49bbd77c.css.map",
-    "main.75b2477f.js.map": "/site-portfolio/static/js/main.75b2477f.js.map",
+    "main.a7972082.js.map": "/site-portfolio/static/js/main.a7972082.js.map",
     "787.8e198dab.chunk.js.map": "/site-portfolio/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49bbd77c.css",
-    "static/js/main.75b2477f.js"
+    "static/js/main.a7972082.js"
   ]
 }
