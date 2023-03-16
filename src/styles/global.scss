@@ -39,9 +39,10 @@ html {
 
 body {
     background-color: $cinzaClaro;
-    background-repeat: no-repeat;
+    background-image: url('../img/textura/textura15.png');
+    background-repeat: repeat;
     background-position: 0px 10px;
-    background-size: 1000px;
+    background-size: 320px;
     overflow: hidden;
 }
 

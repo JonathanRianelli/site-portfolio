@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/site-portfolio/static/css/main.e96bb745.css",
+    "main.css": "/site-portfolio/static/css/main.e4547693.css",
     "main.js": "/site-portfolio/static/js/main.88b251a0.js",
     "static/js/787.8e198dab.chunk.js": "/site-portfolio/static/js/787.8e198dab.chunk.js",
     "static/media/hotel.gif": "/site-portfolio/static/media/hotel.e892f7d522c4d5b954ce.gif",
@@ -11,13 +11,14 @@
     "static/media/pokedex.gif": "/site-portfolio/static/media/pokedex.378189c693c7f401c595.gif",
     "static/media/jogo-da-velha.png": "/site-portfolio/static/media/jogo-da-velha.a53cfefb5370b705661e.png",
     "static/media/clima.png": "/site-portfolio/static/media/clima.9e3bce31603316526a0a.png",
+    "static/media/textura15.png": "/site-portfolio/static/media/textura15.4392677c9d079a6b583c.png",
     "index.html": "/site-portfolio/index.html",
-    "main.e96bb745.css.map": "/site-portfolio/static/css/main.e96bb745.css.map",
+    "main.e4547693.css.map": "/site-portfolio/static/css/main.e4547693.css.map",
     "main.88b251a0.js.map": "/site-portfolio/static/js/main.88b251a0.js.map",
     "787.8e198dab.chunk.js.map": "/site-portfolio/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e96bb745.css",
+    "static/css/main.e4547693.css",
     "static/js/main.88b251a0.js"
   ]
 }
