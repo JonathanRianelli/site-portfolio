@@ -75,6 +75,10 @@ $azulEscuro: #007dff;
                     color: white;
                     opacity: 1;
                 }
+
+                &:focus {
+                    outline: none;  
+                }
             }
 
             #email {
@@ -87,7 +91,7 @@ $azulEscuro: #007dff;
             }
 
             button {
-                background-color: $cinzaClaro;
+                background-color: transparent;
                 color: white;
                 width: 130px;
                 font-size: 15px;

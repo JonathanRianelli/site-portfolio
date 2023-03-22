@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/site-portfolio/static/css/main.49bbd77c.css",
-    "main.js": "/site-portfolio/static/js/main.a7972082.js",
+    "main.css": "/site-portfolio/static/css/main.73e4563f.css",
+    "main.js": "/site-portfolio/static/js/main.41bfd8bd.js",
     "static/js/787.8e198dab.chunk.js": "/site-portfolio/static/js/787.8e198dab.chunk.js",
     "static/media/hotel.webp": "/site-portfolio/static/media/hotel.a4d88aa2c4a697fec305.webp",
+    "static/media/pokecard.gif": "/site-portfolio/static/media/pokecard.12424e273c5cdfbb6e67.gif",
     "static/media/perfil.webp": "/site-portfolio/static/media/perfil.3b4eac907b56eaaa8d2e.webp",
     "static/media/crud.webp": "/site-portfolio/static/media/crud.16b4d315f03cd6b1e852.webp",
     "static/media/curriculo.pdf": "/site-portfolio/static/media/curriculo.7dead66601086dfd2083.pdf",
+    "static/media/links.webp": "/site-portfolio/static/media/links.7cc95b1fe9080c1c8d34.webp",
     "static/media/todo.webp": "/site-portfolio/static/media/todo.7b8cfa2d62b9d1cf564a.webp",
+    "static/media/calculadora.gif": "/site-portfolio/static/media/calculadora.710eca9e96f46a344ad1.gif",
     "static/media/pokedex.webp": "/site-portfolio/static/media/pokedex.5947f4227ebae506e451.webp",
     "static/media/clima.webp": "/site-portfolio/static/media/clima.1a218c80494427940c98.webp",
     "static/media/textura15.png": "/site-portfolio/static/media/textura15.4392677c9d079a6b583c.png",
     "static/media/jogo-da-velha.webp": "/site-portfolio/static/media/jogo-da-velha.5534bd6b00453934ecc8.webp",
     "index.html": "/site-portfolio/index.html",
-    "main.49bbd77c.css.map": "/site-portfolio/static/css/main.49bbd77c.css.map",
-    "main.a7972082.js.map": "/site-portfolio/static/js/main.a7972082.js.map",
+    "main.73e4563f.css.map": "/site-portfolio/static/css/main.73e4563f.css.map",
+    "main.41bfd8bd.js.map": "/site-portfolio/static/js/main.41bfd8bd.js.map",
     "787.8e198dab.chunk.js.map": "/site-portfolio/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49bbd77c.css",
-    "static/js/main.a7972082.js"
+    "static/css/main.73e4563f.css",
+    "static/js/main.41bfd8bd.js"
   ]
 }

@@ -54,6 +54,17 @@ p {
     color: white;
 }
 
+.top-btn {
+    -webkit-tap-highlight-color: transparent;
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    color: #007bffc2;
+    font-size: 3em;
+    cursor: pointer;
+    z-index: 2;
+}
+
 @media (max-width: 600px) {
     #projetos h2,
     #lef h2,

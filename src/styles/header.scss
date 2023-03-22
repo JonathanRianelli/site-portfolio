@@ -70,7 +70,7 @@ header {
 
         #navbarbtn {
             display: block;
-            z-index: 2;
+            z-index: 5;
         }
 
         #navbarbtn.ativo {
@@ -98,7 +98,6 @@ header {
         nav {
             height: 100vh;
             background-color: rgba(0, 0, 0, 0.9);
-            z-index: 1;
             position: fixed;
             top: 0;
             right: 0;
@@ -107,6 +106,7 @@ header {
             transition: 0.5s;
             overflow-x: hidden;
             overflow-y: hidden;
+            z-index: 3;
 
             ul {
                 height: 75vh;
