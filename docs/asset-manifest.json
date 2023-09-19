@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/site-portfolio/static/css/main.73e4563f.css",
-    "main.js": "/site-portfolio/static/js/main.41bfd8bd.js",
+    "main.js": "/site-portfolio/static/js/main.abf39347.js",
     "static/js/787.8e198dab.chunk.js": "/site-portfolio/static/js/787.8e198dab.chunk.js",
     "static/media/hotel.webp": "/site-portfolio/static/media/hotel.a4d88aa2c4a697fec305.webp",
     "static/media/pokecard.gif": "/site-portfolio/static/media/pokecard.12424e273c5cdfbb6e67.gif",
@@ -17,11 +17,11 @@
     "static/media/jogo-da-velha.webp": "/site-portfolio/static/media/jogo-da-velha.5534bd6b00453934ecc8.webp",
     "index.html": "/site-portfolio/index.html",
     "main.73e4563f.css.map": "/site-portfolio/static/css/main.73e4563f.css.map",
-    "main.41bfd8bd.js.map": "/site-portfolio/static/js/main.41bfd8bd.js.map",
+    "main.abf39347.js.map": "/site-portfolio/static/js/main.abf39347.js.map",
     "787.8e198dab.chunk.js.map": "/site-portfolio/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73e4563f.css",
-    "static/js/main.41bfd8bd.js"
+    "static/js/main.abf39347.js"
   ]
 }
