@@ -1,5 +1,5 @@
 import perfil from "../img/perfil.webp";
-import curriculo from "../arquivos/curriculo.pdf";
+import curriculo from "../arquivos/Currículo Jonathan Rianelli.pdf";
 import "../styles/sobre.scss";
 
 export default function Sobre() {

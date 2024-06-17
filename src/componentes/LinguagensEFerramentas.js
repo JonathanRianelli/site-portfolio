@@ -49,6 +49,14 @@ export default function LinguagensEFerramentas() {
                     <i class="devicon-mysql-plain colored"></i>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <span>Python</span>
+                    <i class="devicon-python-plain colored colored"></i>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <span>PHP</span>
+                    <i class="devicon-php-plain colored"></i>
+                </SwiperSlide>
+                <SwiperSlide>
                     <span>Vue.js</span>
                     <i class="devicon-vuejs-plain colored"></i>
                 </SwiperSlide>
