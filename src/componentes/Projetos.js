@@ -8,7 +8,7 @@ import pokedex from "../img/projetos/pokedex.webp";
 import jogoDaVelha from "../img/projetos/jogo-da-velha.webp";
 import calculadora from "../img/projetos/calculadora.gif";
 import pCard from "../img/projetos/pokecard.gif";
-import links from "../img/projetos/links.webp";
+import links from "../img/projetos/link.webp";
 import "../styles/projetos.scss";
 import { SiStyledcomponents } from "react-icons/si";
 
