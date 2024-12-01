@@ -53,6 +53,9 @@ export default function LinguagensEFerramentas() {
                     <i class="devicon-python-plain colored colored"></i>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <span>Next.js</span>
+                    <i class="devicon-nextjs-plain" style={{ color: "white" }}></i>
+                </SwiperSlide><SwiperSlide>
                     <span>PHP</span>
                     <i class="devicon-php-plain colored"></i>
                 </SwiperSlide>

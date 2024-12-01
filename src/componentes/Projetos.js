@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import todo from "../img/projetos/todo.webp";
 import hotel from "../img/projetos/hotel.webp";
+import textToSpeech from "../img/projetos/text-to-speech.gif";
 import crud from "../img/projetos/crud.webp";
 import clima from "../img/projetos/clima.webp";
 import pokedex from "../img/projetos/pokedex.webp";
@@ -136,6 +137,28 @@ export default function Projetos() {
 
                 </SwiperSlide>
                 <SwiperSlide>
+                    <h3>Text to Speech</h3>
+
+                    <div className="img-box">
+                        <img src={textToSpeech} alt="Text to Speech" />
+
+                        <div className="linguagens-usadas">
+                            <span class="devicon-nextjs-plain" style={{ color: "white" }}></span>
+                            <span class="devicon-typescript-plain colored"></span>
+                            <span class="devicon-css3-plain colored"></span>
+                            <span class="devicon-nodejs-plain colored"></span>
+                        </div>
+                    </div>
+
+                    <p>Projeto desenvolvido com Next.js, TypeScript, CSS e Node.js, que transforma texto em áudio utilizando a API ElevenLabs. Oferece funcionalidades como seleção de vozes, prévias de áudio e geração de arquivos de forma prática.</p>
+
+                    <div className="botoes">
+                        <button onClick={() => abrirUrl('https://text-to-speech-swart.vercel.app/')} id="hbtn">Acessar site</button>
+                        <button onClick={() => abrirUrl('https://github.com/JonathanRianelli/text-to-speech')}>Repositório</button>
+                    </div>
+
+                </SwiperSlide>
+                <SwiperSlide>
                     <h3>ToDo</h3>
 
                     <div className="img-box">
@@ -233,7 +256,6 @@ export default function Projetos() {
                     </div>
 
                 </SwiperSlide>
-                {box1325()}
                 <SwiperSlide>
                     <h3>Pokémon Cards</h3>
 

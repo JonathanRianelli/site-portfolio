@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/site-portfolio/static/css/main.55508185.css",
-    "main.js": "/site-portfolio/static/js/main.79a704ea.js",
+    "main.js": "/site-portfolio/static/js/main.12967daf.js",
     "static/js/787.8e198dab.chunk.js": "/site-portfolio/static/js/787.8e198dab.chunk.js",
     "static/media/hotel.webp": "/site-portfolio/static/media/hotel.a4d88aa2c4a697fec305.webp",
     "static/media/pokecard.gif": "/site-portfolio/static/media/pokecard.12424e273c5cdfbb6e67.gif",
     "static/media/perfil.webp": "/site-portfolio/static/media/perfil.3b4eac907b56eaaa8d2e.webp",
+    "static/media/link.webp": "/site-portfolio/static/media/link.e50f9f1d4892bde850b1.webp",
     "static/media/crud.webp": "/site-portfolio/static/media/crud.16b4d315f03cd6b1e852.webp",
-    "static/media/links.webp": "/site-portfolio/static/media/links.7cc95b1fe9080c1c8d34.webp",
+    "static/media/text-to-speech.gif": "/site-portfolio/static/media/text-to-speech.f450dda28af15093db23.gif",
     "static/media/todo.webp": "/site-portfolio/static/media/todo.7b8cfa2d62b9d1cf564a.webp",
     "static/media/calculadora.gif": "/site-portfolio/static/media/calculadora.710eca9e96f46a344ad1.gif",
     "static/media/pokedex.webp": "/site-portfolio/static/media/pokedex.5947f4227ebae506e451.webp",
@@ -17,11 +18,11 @@
     "static/media/jogo-da-velha.webp": "/site-portfolio/static/media/jogo-da-velha.5534bd6b00453934ecc8.webp",
     "index.html": "/site-portfolio/index.html",
     "main.55508185.css.map": "/site-portfolio/static/css/main.55508185.css.map",
-    "main.79a704ea.js.map": "/site-portfolio/static/js/main.79a704ea.js.map",
+    "main.12967daf.js.map": "/site-portfolio/static/js/main.12967daf.js.map",
     "787.8e198dab.chunk.js.map": "/site-portfolio/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55508185.css",
-    "static/js/main.79a704ea.js"
+    "static/js/main.12967daf.js"
   ]
 }
