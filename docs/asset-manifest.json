@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/site-portfolio/static/css/main.55508185.css",
-    "main.js": "/site-portfolio/static/js/main.12967daf.js",
+    "main.js": "/site-portfolio/static/js/main.df56d4ec.js",
     "static/js/787.8e198dab.chunk.js": "/site-portfolio/static/js/787.8e198dab.chunk.js",
     "static/media/hotel.webp": "/site-portfolio/static/media/hotel.a4d88aa2c4a697fec305.webp",
     "static/media/pokecard.gif": "/site-portfolio/static/media/pokecard.12424e273c5cdfbb6e67.gif",
@@ -12,17 +12,17 @@
     "static/media/todo.webp": "/site-portfolio/static/media/todo.7b8cfa2d62b9d1cf564a.webp",
     "static/media/calculadora.gif": "/site-portfolio/static/media/calculadora.710eca9e96f46a344ad1.gif",
     "static/media/pokedex.webp": "/site-portfolio/static/media/pokedex.5947f4227ebae506e451.webp",
-    "static/media/Currículo Jonathan Rianelli.pdf": "/site-portfolio/static/media/Currículo Jonathan Rianelli.a58809d2cc1c5691dfb6.pdf",
+    "static/media/curriculo.pdf": "/site-portfolio/static/media/curriculo.7820a04f37cf5a85133b.pdf",
     "static/media/clima.webp": "/site-portfolio/static/media/clima.1a218c80494427940c98.webp",
     "static/media/textura15.png": "/site-portfolio/static/media/textura15.4392677c9d079a6b583c.png",
     "static/media/jogo-da-velha.webp": "/site-portfolio/static/media/jogo-da-velha.5534bd6b00453934ecc8.webp",
     "index.html": "/site-portfolio/index.html",
     "main.55508185.css.map": "/site-portfolio/static/css/main.55508185.css.map",
-    "main.12967daf.js.map": "/site-portfolio/static/js/main.12967daf.js.map",
+    "main.df56d4ec.js.map": "/site-portfolio/static/js/main.df56d4ec.js.map",
     "787.8e198dab.chunk.js.map": "/site-portfolio/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55508185.css",
-    "static/js/main.12967daf.js"
+    "static/js/main.df56d4ec.js"
   ]
 }
