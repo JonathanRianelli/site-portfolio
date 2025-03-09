@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/site-portfolio/static/css/main.55508185.css",
-    "main.js": "/site-portfolio/static/js/main.df56d4ec.js",
-    "static/js/787.8e198dab.chunk.js": "/site-portfolio/static/js/787.8e198dab.chunk.js",
-    "static/media/hotel.webp": "/site-portfolio/static/media/hotel.a4d88aa2c4a697fec305.webp",
-    "static/media/pokecard.gif": "/site-portfolio/static/media/pokecard.12424e273c5cdfbb6e67.gif",
-    "static/media/perfil.webp": "/site-portfolio/static/media/perfil.3b4eac907b56eaaa8d2e.webp",
-    "static/media/link.webp": "/site-portfolio/static/media/link.e50f9f1d4892bde850b1.webp",
-    "static/media/crud.webp": "/site-portfolio/static/media/crud.16b4d315f03cd6b1e852.webp",
-    "static/media/text-to-speech.gif": "/site-portfolio/static/media/text-to-speech.f450dda28af15093db23.gif",
-    "static/media/todo.webp": "/site-portfolio/static/media/todo.7b8cfa2d62b9d1cf564a.webp",
-    "static/media/calculadora.gif": "/site-portfolio/static/media/calculadora.710eca9e96f46a344ad1.gif",
-    "static/media/pokedex.webp": "/site-portfolio/static/media/pokedex.5947f4227ebae506e451.webp",
-    "static/media/curriculo.pdf": "/site-portfolio/static/media/curriculo.7820a04f37cf5a85133b.pdf",
-    "static/media/clima.webp": "/site-portfolio/static/media/clima.1a218c80494427940c98.webp",
-    "static/media/textura15.png": "/site-portfolio/static/media/textura15.4392677c9d079a6b583c.png",
-    "static/media/jogo-da-velha.webp": "/site-portfolio/static/media/jogo-da-velha.5534bd6b00453934ecc8.webp",
-    "index.html": "/site-portfolio/index.html",
-    "main.55508185.css.map": "/site-portfolio/static/css/main.55508185.css.map",
-    "main.df56d4ec.js.map": "/site-portfolio/static/js/main.df56d4ec.js.map",
-    "787.8e198dab.chunk.js.map": "/site-portfolio/static/js/787.8e198dab.chunk.js.map"
+    "main.css": "/static/css/main.b2cf5b6b.css",
+    "main.js": "/static/js/main.b85679f3.js",
+    "static/js/787.8e198dab.chunk.js": "/static/js/787.8e198dab.chunk.js",
+    "static/media/hotel.webp": "/static/media/hotel.a4d88aa2c4a697fec305.webp",
+    "static/media/pokecard.gif": "/static/media/pokecard.12424e273c5cdfbb6e67.gif",
+    "static/media/perfil.webp": "/static/media/perfil.3b4eac907b56eaaa8d2e.webp",
+    "static/media/link.webp": "/static/media/link.e50f9f1d4892bde850b1.webp",
+    "static/media/crud.webp": "/static/media/crud.16b4d315f03cd6b1e852.webp",
+    "static/media/text-to-speech.gif": "/static/media/text-to-speech.f450dda28af15093db23.gif",
+    "static/media/todo.webp": "/static/media/todo.7b8cfa2d62b9d1cf564a.webp",
+    "static/media/calculadora.gif": "/static/media/calculadora.710eca9e96f46a344ad1.gif",
+    "static/media/pokedex.webp": "/static/media/pokedex.5947f4227ebae506e451.webp",
+    "static/media/curriculo.pdf": "/static/media/curriculo.7820a04f37cf5a85133b.pdf",
+    "static/media/clima.webp": "/static/media/clima.1a218c80494427940c98.webp",
+    "static/media/textura15.png": "/static/media/textura15.4392677c9d079a6b583c.png",
+    "static/media/jogo-da-velha.webp": "/static/media/jogo-da-velha.5534bd6b00453934ecc8.webp",
+    "index.html": "/index.html",
+    "main.b2cf5b6b.css.map": "/static/css/main.b2cf5b6b.css.map",
+    "main.b85679f3.js.map": "/static/js/main.b85679f3.js.map",
+    "787.8e198dab.chunk.js.map": "/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55508185.css",
-    "static/js/main.df56d4ec.js"
+    "static/css/main.b2cf5b6b.css",
+    "static/js/main.b85679f3.js"
   ]
 }
