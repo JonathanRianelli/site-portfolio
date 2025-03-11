@@ -1,3 +1,5 @@
+import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SiStyledcomponents } from "react-icons/si";
 import 'swiper/css'
@@ -6,18 +8,35 @@ import "../styles/linguagenseferramentas.scss";
 
 export default function LinguagensEFerramentas() {
 
+    useEffect(() => {
+        // Inicializa o ScrollReveal
+        const scrollReveal = ScrollReveal({
+          distance: "30px",
+          duration: 700,
+          reset: false,
+        });
+    
+        // Aplica a animação nos elementos com a classe 'elemento'
+        scrollReveal.reveal(".fade-up", {
+          origin: "bottom",
+          interval: 30,
+        });
+      }, []);
+
     return (
         <section id="linguagensEFerramentas">
 
-            <h2>Linguagens</h2>
+            <h2 className="fade-up">Linguagens</h2>
 
             <Swiper
+
+            
                 slidesPerView={2}
                 pagination={{
                     clickable: true,
                 }}
                 modules={[Pagination]}
-                className="mySwiper"
+                className="mySwiper fade-up"
 
 
                 breakpoints={{
@@ -55,7 +74,8 @@ export default function LinguagensEFerramentas() {
                 <SwiperSlide>
                     <span>Next.js</span>
                     <i class="devicon-nextjs-plain" style={{ color: "white" }}></i>
-                </SwiperSlide><SwiperSlide>
+                </SwiperSlide>
+                <SwiperSlide>
                     <span>PHP</span>
                     <i class="devicon-php-plain colored"></i>
                 </SwiperSlide>
@@ -89,7 +109,7 @@ export default function LinguagensEFerramentas() {
                 </SwiperSlide>
             </Swiper>
 
-            <h2>Ferramentas</h2>
+            <h2 className="fade-up">Ferramentas</h2>
 
             <Swiper
                 slidesPerView={2}
@@ -97,7 +117,7 @@ export default function LinguagensEFerramentas() {
                     clickable: true,
                 }}
                 modules={[Pagination]}
-                className="mySwiper"
+                className="mySwiper fade-up"
 
 
                 breakpoints={{
