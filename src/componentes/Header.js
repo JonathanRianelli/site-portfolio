@@ -23,9 +23,9 @@ export default function Header() {
         <header id="header">
 
             <div id="navbarbtn" className={ativado ? 'ativo' : ''} onClick={() => ativarDesativar()}>
-                <div class="linha" id="l1"></div>
-                <div class="linha" id="l2"></div>
-                <div class="linha" id="l3"></div>
+                <div className="linha" id="l1"></div>
+                <div className="linha" id="l2"></div>
+                <div className="linha" id="l3"></div>
             </div>
 
             <nav className={ativado ? 'ativo' : ''}>

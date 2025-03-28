@@ -1,144 +1,173 @@
 $cinzaClaro: #1d1d1d;
 $cinzaEscuro: #171717;
-$azulClaro: #69c6f4;
-$azulEscuro: #007dff;
+$azulEscuro: #3a8dff;
+$azulClaro: #6ec3f4;
 
 header {
-    background-color: $cinzaEscuro;
-    height: 100px;
+  background-color: $cinzaEscuro;
+  height: 100px;
 
-    #navbarbtn {
-        display: none;
-        background-color: rgba(0, 0, 0, 0.15);
-        position: fixed;
-        right: 0;
-        top: 0;
+  #navbarbtn {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.15);
+    position: fixed;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 30px;
+    padding: 10px 16px;
+    -webkit-tap-highlight-color: transparent;
+
+    .linha {
+      position: relative;
+      background-color: $azulEscuro;
+      margin: 8px 0;
+      height: 3px;
+      width: 28px;
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+  }
+
+  nav {
+    height: 100%;
+    backdrop-filter: blur(3px);
+
+    ul {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      li {
+        font-size: 21px;
+        margin: 0 40px;
+        padding: 5px;
         cursor: pointer;
-        border-radius: 50%;
-        margin: 30px;
-        padding: 10px 16px;
-        -webkit-tap-highlight-color: transparent;
 
-        .linha {
-            position: relative;
-            background-color: $azulEscuro;
-            margin: 8px 0;
-            height: 3px;
-            width: 28px;
-        }
-    }
+        a {
+          display: inline-block;
+          color: $azulClaro;
+          padding: 10px;
+          transition: all 0.3s ease-out;
+          position: relative;
+          text-align: center;
+          isolation: isolate; // Contém o pseudo-elemento
 
-    nav {
-        height: 100%;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%; // Começa do centro
+            width: 0;
+            height: 2px;
+            background: $azulClaro;
+            transform: translateX(-50%); // Centraliza
+            transition: width 0.3s ease-out;
+          }
 
-        ul {
-            display: flex;
-            align-items: center;
-            height: 100%;
+          &:hover {
+            color: lighten($azulClaro, 10%);
 
-            li {
-                font-size: 21px;
-                margin: 0 40px;
-                padding: 5px;
-                cursor: pointer;
-
-                a {
-                    color: $azulClaro;
-                    padding: 10px;
-                    border-radius: 6px;
-                    transition: 0.2s ease-in-out;
-
-                    &:hover {
-                        background-color: #0a0a0a62;
-                    }
-                }
+            &::after {
+              width: 100%;
             }
+          }
         }
+      }
     }
+  }
 }
 
 @media (min-width: 1131px) {
-    body {
-        overflow: auto;
-    }
+  body {
+    overflow: auto;
+  }
 }
 
 @media (max-width: 1130px) {
-    header {
-        background-color: #00000000;
-        height: fit-content;
+  header {
+    background-color: #00000000;
+    height: fit-content;
 
-        #navbarbtn {
-            display: block;
-            z-index: 5;
-        }
-
-        #navbarbtn.ativo {
-            #l1 {
-                opacity: 0;
-                transition: 0.3s ease-in-out;
-            }
-
-            #l2 {
-                padding: 0;
-                margin: 0;
-                transform: rotate(-135deg);
-                transition: 0.2s ease-in-out;
-            }
-
-            #l3 {
-                padding: 0;
-                margin: 0;
-                transform: rotate(135deg);
-                top: -3px;
-                transition: 0.3s ease-in-out;
-            }
-        }
-
-        nav {
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.9);
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 0;
-            visibility: hidden;
-            transition: 0.5s;
-            overflow-x: hidden;
-            overflow-y: hidden;
-            z-index: 3;
-
-            ul {
-                height: 75vh;
-                flex-direction: column;
-                justify-content: start;
-                align-items: baseline;
-                margin-top: 15vh;
-
-                li {
-                    width: 60%;
-                    padding: 0;
-                    
-                    a {
-                        display: inline-block;
-                        width: 100%;
-                        padding: 30px;
-                        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-                        
-                    }
-                }
-            }
-        }
-
-        nav.ativo {
-            visibility: visible;
-            width: 50vw;
-        }
+    #navbarbtn {
+      display: block;
+      z-index: 5;
     }
+
+    #navbarbtn.ativo {
+      #l1 {
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+      }
+
+      #l2 {
+        padding: 0;
+        margin: 0;
+        transform: rotate(-135deg);
+        transition: 0.2s ease-in-out;
+      }
+
+      #l3 {
+        padding: 0;
+        margin: 0;
+        transform: rotate(135deg);
+        top: -3px;
+        transition: 0.3s ease-in-out;
+      }
+    }
+
+    nav {
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 0;
+      visibility: hidden;
+      transition: 0.5s;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      z-index: 3;
+
+      ul {
+        height: 75vh;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 15vh;
+
+        li {
+          padding: 0;
+
+          a {
+            display: inline-block;
+            width: 243px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+            &::after {
+              display: none;
+            }
+
+            &:hover {
+              color: lighten($azulClaro, 10%);
+              transform: translateY(0) !important;
+            }
+          }
+        }
+      }
+    }
+
+    nav.ativo {
+      visibility: visible;
+      width: 50vw;
+    }
+  }
 }
 
 @media (max-width: 580px) {
-    header nav.ativo {
-        width: 100vw;
-    }
+  header nav.ativo {
+    width: 100vw;
+  }
 }

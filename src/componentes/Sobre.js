@@ -1,38 +1,55 @@
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import perfil from "../img/perfil.webp";
+import perfil from "../img/perfil-sem-fundo.png";
 import curriculo from "../arquivos/curriculo.pdf";
 import "../styles/sobre.scss";
 
 export default function Sobre() {
-    useEffect(() => {
-        // Inicializa o ScrollReveal
-        const scrollReveal = ScrollReveal({
-          origin: "bottom",
-          distance: "30px",
-          duration: 700,
-          reset: false,
-        });
-    
-        // Aplica a animação nos elementos com a classe 'elemento'
-        scrollReveal.reveal(".fade-up", {
-          interval: 200,
-        });
-      }, []);
+  useEffect(() => {
+    // Inicializa o ScrollReveal
+    const scrollReveal = ScrollReveal({
+      origin: "bottom",
+      distance: "30px",
+      duration: 700,
+      reset: false,
+    });
 
-    return (
-        <section id="sobre">
-            <div ><img src={perfil} alt="Minha foto" /></div>
+    // Aplica a animação nos elementos com a classe 'elemento'
+    scrollReveal.reveal(".fade-up", {
+      interval: 200,
+    });
+  }, []);
 
-            <div>
-                <h2 className="fade-up">Jonathan Rianelli</h2>
+  return (
+    <section id="sobre">
+      <div>
+        <img
+          src={perfil}
+          alt="Jonathan Rianelli - Desenvolvedor Web"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
 
-                <h3 className="fade-up">Desenvolvedor Web</h3>
+      <div>
+        <h2 className="fade-up">Jonathan Rianelli</h2>
 
-                <p className="fade-up">Olá, bem-vindo ao meu portfólio! Meu nome é Jonathan, e sempre fui apaixonado por tecnologia. Em 2018, trabalhei na manutenção de smartphones, mas foi na programação que encontrei minha verdadeira vocação. Em 2021, iniciei meus estudos e comecei a desenvolver projetos, explorando diversas tecnologias. Em janeiro de 2024, ingressei na faculdade de Análise e Desenvolvimento de Sistemas para aprofundar meus conhecimentos. Além dos estudos, trabalho como freelancer, aplicando minhas habilidades em projetos reais. Você pode conferir alguns dos meus projetos pessoais abaixo, na seção 'Projetos'.</p>
+        <h3 className="fade-up">Desenvolvedor Web</h3>
 
-                <div className="fade-up" id="btnBox"><a href={curriculo} download="Currículo Jonathan Rianelli de Oliveira" id="btn">Baixar Currículo</a></div>
-            </div>
-        </section>
-    )
+        <p className="fade-up">
+        Sou Jonathan Rianelli, desenvolvedor web apaixonado por tecnologia. Em 2018, trabalhei na manutenção de smartphones, mas foi na programação que encontrei minha verdadeira vocação, iniciando estudos autodidatas e desenvolvendo projetos com diversas tecnologias. Atualmente curso Análise e Desenvolvimento de Sistemas (2024) e atuo como freelancer, aplicando meus conhecimentos em projetos reais - alguns dos quais você pode conferir abaixo na seção de projetos.
+        </p>
+
+        <div className="fade-up" id="btnBox">
+          <a
+            href={curriculo}
+            download="Currículo Jonathan Rianelli de Oliveira"
+            id="btn"
+          >
+            Baixar Currículo
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 }

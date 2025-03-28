@@ -1,95 +1,105 @@
 $cinzaClaro: #1d1d1d;
 $cinzaEscuro: #171717;
-$azulClaro: #69c6f4;
-$azulEscuro: #007dff;
+$azulEscuro: #3a8dff;
+$azulClaro: #6ec3f4;
+$azulEscuro: #3a8dff;
+$azulClaro: #6ec3f4;
 
 #sobre {
-    display: flex;
-    justify-content: space-around;
-    margin: 70px 90px;
+  display: flex;
+  justify-content: space-around;
+  margin: 70px 90px;
 
-    img {
-        width: 330px;
-        opacity: 0;
-        animation: fadeIn 0.8s ease-in forwards;
-    }
-    
-    @keyframes fadeIn {
-        to {
-            opacity: 1;
-        }
-    }
+  img {
+    width: 375px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+    border-radius: 50%;
+  }
 
-    h2 {
-        font-size: 50px;
-        font-weight: normal;
-        color: $azulEscuro;
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
     }
+  }
 
-    h3 {
-        font-size: 30px;
-        font-weight: normal;
-        margin: 4px 0 27px;
-        color: $azulClaro;
+  h2 {
+    font-size: 50px;
+    font-weight: normal;
+    color: $azulEscuro;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 4px 0 27px;
+    color: $azulClaro;
+  }
+  p {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #btnBox {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+
+    #btn {
+      display: inline-block;
+      font-size: 1.1em;
+      background-color: transparent;
+      color: white;
+      border: 2px solid $azulEscuro;
+      padding: 10px;
+      border-radius: 30px;
+      width: 180px;
+      margin: 45px 0;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $azulEscuro;
+        transition: 0.3s ease-in-out;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba($azulEscuro, 0.4);
+      }
+      &:active {
+        transform: translateY(0);
+        transition: 0.1s ease-in-out;
+      }
     }
-    p {
-        font-size: 1.1em;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    #btnBox {
-        text-align: center;
-        -webkit-tap-highlight-color: transparent;
-
-        #btn {
-            display: inline-block;
-            font-size: 1.1em;
-            background-color: transparent;
-            color: white;
-            border: 2px solid $azulEscuro;
-            padding: 10px;
-            border-radius: 30px;
-            width: 180px;
-            margin: 45px 0;
-            cursor: pointer;
-
-            &:hover {
-                background-color: $azulEscuro;
-                transition: 0.3s ease-in-out;
-            }
-        }
-    }
+  }
 }
 
 @media (max-width: 1130px) {
-    #sobre {
-        text-align: center;
-        flex-direction: column;
-        margin: 35px;
+  #sobre {
+    text-align: center;
+    flex-direction: column;
+    margin: 35px;
 
-        img {
-            width: 200px;
-        }
-
-        h3 {
-            font-size: 28px;
-        }
+    img {
+      width: 240px;
     }
+
+    h3 {
+      font-size: 28px;
+    }
+  }
 }
 
 @media (max-width: 600px) {
-    #sobre {
-        h2 {
-            font-size: 33px;
-        }
-
-        h3 {
-            font-size: 24px;
-        }
-
-        p {
-            font-size: 16px;
-        }
+  #sobre {
+    h2 {
+      font-size: 33px;
     }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
 }

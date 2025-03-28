@@ -1,118 +1,153 @@
 $cinzaClaro: #1d1d1d;
 $cinzaEscuro: #171717;
-$azulClaro: #69c6f4;
-$azulEscuro: #007dff;
+$azulEscuro: #3a8dff;
+$azulClaro: #6ec3f4;
 
 #contato {
-    text-align: center;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 30px;
+
+  h2 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: normal;
     margin-bottom: 50px;
-    padding: 30px;
+    color: $azulClaro;
+    padding: 6px 20px;
+    border-left: 4px solid $azulEscuro;
+    border-right: 4px solid $azulEscuro;
+  }
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 
-    h2 {
-        display: inline-block;
-        font-size: 40px;
-        font-weight: normal;
-        margin-bottom: 50px;
-        color: $azulClaro;
-        padding: 6px 20px;
-        border-left: 4px solid $azulEscuro;
-        border-right: 4px solid $azulEscuro;
-    }
-    div {
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+
+      i {
+        display: inline-flex;
+        margin: 10px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
         align-items: center;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: translateX(5px)!important;
+        }
+        
 
-        nav {
-            display: flex;
-            flex-direction: column;
-            align-items: baseline;
-
-            i {
-                margin: 10px;
-                display: flex;
-                align-items: center;
-
-                span {
-                    display: inline-block;
-                    background-color: $azulClaro;
-                    border-radius: 50%;
-                    padding: 20px;
-                    height: 32px;
-                    font-size: 2em;
-                    color: $cinzaClaro;
-                }
-
-                a {
-                    color: white;
-                    margin-left: 16px;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: transparent;
+          border: 2px solid $azulEscuro;
+          border-radius: 50%;
+          width: 65px;
+          height: 65px;
+          font-size: 27px;
+          color: $azulClaro;
+          transition: all 0.4s ease;
         }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            width: 600px;
-            text-align: right;
-            margin-top: 40px;
-
-            #nome {
-                background-color: $cinzaClaro;
-                margin-bottom: 10px;
-                border: 2px solid $azulEscuro;
-                padding: 10px;
-                border-radius: 8px;
-                height: 30px;
-                color: white;
-
-                &::placeholder {
-                    color: white;
-                    opacity: 1;
-                }
-
-                &:focus {
-                    outline: none;  
-                }
-            }
-
-            #email {
-                @extend #nome;
-            }
-
-            #msg {
-                @extend #nome;
-                height: 130px;
-            }
-
-            button {
-                background-color: transparent;
-                color: white;
-                width: 130px;
-                font-size: 15px;
-                margin: 20px 15px;
-                padding: 8px 18px;
-                border-radius: 30px;
-                border: 2px solid $azulEscuro;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: $azulEscuro;
-                    transition: 0.3s ease-in-out;
-                }
-            }
+        a {
+          color: white;
+          margin-left: 16px;
+          transition: color 0.3s ease;
+          
+          &:hover {
+            color: $azulClaro;
+            text-decoration: none;
+          }
         }
+
+        &:hover span {
+          background-color: $azulClaro;
+          color: $cinzaEscuro;
+          border-color: $azulClaro;
+        }
+      }
     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+      text-align: right;
+      margin-top: 40px;
+
+      input,
+      textarea {
+        transition: all 0.3s ease;
+
+        &:focus {
+          border-color: $azulClaro;
+          box-shadow: 0 0 10px rgba($azulEscuro, 0.4);
+        }
+      }
+      #nome {
+        background-color: $cinzaClaro;
+        margin-bottom: 10px;
+        border: 2px solid $azulEscuro;
+        padding: 10px;
+        border-radius: 8px;
+        height: 30px;
+        color: white;
+
+        &::placeholder {
+          color: rgb(221, 221, 221);
+          opacity: 1;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      #email {
+        @extend #nome;
+      }
+
+      #msg {
+        @extend #nome;
+        height: 130px;
+      }
+
+      button {
+        background-color: transparent;
+        color: white;
+        width: 130px;
+        font-size: 15px;
+        margin: 20px 15px;
+        padding: 8px 18px;
+        border-radius: 30px;
+        border: 2px solid $azulEscuro;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $azulEscuro;
+          transition: 0.3s ease-in-out;
+          transform: translateY(-3px);
+          box-shadow: 0 4px 15px rgba($azulEscuro, 0.4);
+        }
+        &:active {
+          transform: translateY(0);
+          transition: 0.1s ease-in-out;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 980px) {
-    #contato div nav {
-        display: flex;
-        width: 600px;
-    }
+  #contato div nav {
+    display: flex;
+    width: 600px;
+  }
 }

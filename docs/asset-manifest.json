@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.5dce0cc4.css",
-    "main.js": "/static/js/main.104f09ae.js",
+    "main.css": "/static/css/main.fff5af1a.css",
+    "main.js": "/static/js/main.c292de40.js",
     "static/js/787.8e198dab.chunk.js": "/static/js/787.8e198dab.chunk.js",
     "static/media/vz-cell.gif": "/static/media/vz-cell.b73287f925d873a038a8.gif",
     "static/media/hotel.webp": "/static/media/hotel.a4d88aa2c4a697fec305.webp",
     "static/media/pokecard.gif": "/static/media/pokecard.12424e273c5cdfbb6e67.gif",
-    "static/media/perfil.webp": "/static/media/perfil.3b4eac907b56eaaa8d2e.webp",
+    "static/media/perfil-sem-fundo.png": "/static/media/perfil-sem-fundo.9b21738a89d9acef42b5.png",
     "static/media/link.webp": "/static/media/link.e50f9f1d4892bde850b1.webp",
     "static/media/crud.webp": "/static/media/crud.16b4d315f03cd6b1e852.webp",
     "static/media/text-to-speech.gif": "/static/media/text-to-speech.f450dda28af15093db23.gif",
@@ -18,12 +18,12 @@
     "static/media/textura15.png": "/static/media/textura15.4392677c9d079a6b583c.png",
     "static/media/jogo-da-velha.webp": "/static/media/jogo-da-velha.5534bd6b00453934ecc8.webp",
     "index.html": "/index.html",
-    "main.5dce0cc4.css.map": "/static/css/main.5dce0cc4.css.map",
-    "main.104f09ae.js.map": "/static/js/main.104f09ae.js.map",
+    "main.fff5af1a.css.map": "/static/css/main.fff5af1a.css.map",
+    "main.c292de40.js.map": "/static/js/main.c292de40.js.map",
     "787.8e198dab.chunk.js.map": "/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5dce0cc4.css",
-    "static/js/main.104f09ae.js"
+    "static/css/main.fff5af1a.css",
+    "static/js/main.c292de40.js"
   ]
 }
