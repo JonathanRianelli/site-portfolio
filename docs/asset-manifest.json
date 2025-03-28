@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a393ed4b.css",
+    "main.css": "/static/css/main.28837ef2.css",
     "main.js": "/static/js/main.c292de40.js",
     "static/js/787.8e198dab.chunk.js": "/static/js/787.8e198dab.chunk.js",
     "static/media/vz-cell.gif": "/static/media/vz-cell.b73287f925d873a038a8.gif",
@@ -18,12 +18,12 @@
     "static/media/textura15.png": "/static/media/textura15.4392677c9d079a6b583c.png",
     "static/media/jogo-da-velha.webp": "/static/media/jogo-da-velha.5534bd6b00453934ecc8.webp",
     "index.html": "/index.html",
-    "main.a393ed4b.css.map": "/static/css/main.a393ed4b.css.map",
+    "main.28837ef2.css.map": "/static/css/main.28837ef2.css.map",
     "main.c292de40.js.map": "/static/js/main.c292de40.js.map",
     "787.8e198dab.chunk.js.map": "/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a393ed4b.css",
+    "static/css/main.28837ef2.css",
     "static/js/main.c292de40.js"
   ]
 }
