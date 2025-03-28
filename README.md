@@ -1,6 +1,6 @@
 # Site Portfólio
 
-<p>Acesse o projeto <a href="https://jonathanrianelli.github.io/site-portfolio/">aqui</a></p>
+<p>Acesse o projeto <a href="https://jonathanrianelli.com.br/">aqui</a></p>
 
 ## Tecnologias Usadas
 - ✔️ HTML
