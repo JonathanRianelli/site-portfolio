@@ -16,15 +16,7 @@ html {
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-    width: 14px;
-    background-color: rgb(12, 12, 12);
-}
 
-::-webkit-scrollbar-thumb {
-    background-color: $azulEscuro;
-    
-}
 
 @mixin titulo() {
     display: inline-block;
