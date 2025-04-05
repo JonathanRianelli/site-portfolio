@@ -3,8 +3,9 @@ $cinzaEscuro: #171717;
 $azulEscuro: #3a8dff;
 $azulClaro: #6ec3f4;
 
+
 header {
-  background-color: $cinzaEscuro;
+  background-color: hsla(0, 0%, 5%, 0.6);
   height: 100px;
 
   #navbarbtn {
@@ -31,7 +32,6 @@ header {
 
   nav {
     height: 100%;
-    backdrop-filter: blur(3px);
 
     ul {
       display: flex;
@@ -119,6 +119,7 @@ header {
     nav {
       height: 100vh;
       background-color: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(3px);
       position: fixed;
       top: 0;
       right: 0;

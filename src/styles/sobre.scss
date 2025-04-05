@@ -2,8 +2,7 @@ $cinzaClaro: #1d1d1d;
 $cinzaEscuro: #171717;
 $azulEscuro: #3a8dff;
 $azulClaro: #6ec3f4;
-$azulEscuro: #3a8dff;
-$azulClaro: #6ec3f4;
+
 
 #sobre {
   display: flex;
@@ -14,7 +13,9 @@ $azulClaro: #6ec3f4;
     width: 375px;
     opacity: 0;
     animation: fadeIn 0.8s ease-in forwards;
-    border-radius: 50%;
+    border-radius: 30%;
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
   }
 
   @keyframes fadeIn {

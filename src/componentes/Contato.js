@@ -14,17 +14,17 @@ export default function Contato() {
     });
 
     // Aplica a animação nos elementos com a classe 'elemento'
-    scrollReveal.reveal(".fade-up", {
+    scrollReveal.reveal(".", {
       interval: 150,
     });
   }, []);
 
   return (
     <section id="contato">
-      <h2 className="fade-up">Contate-me</h2>
+      <h2 >Contate-me</h2>
       <div>
-        <nav>
-          <i className="fade-up">
+        <nav className="fade-up">
+          <i >
             <span>
               <FaEnvelope />
             </span>
@@ -36,7 +36,7 @@ export default function Contato() {
               jonthanrdo@gmail.com
             </a>
           </i>
-          <i  className="fade-up">
+          <i  >
             <span>
               <FaWhatsapp />
             </span>
@@ -49,7 +49,7 @@ export default function Contato() {
               +55 32 99915-5737
             </a>
           </i>
-          <i  className="fade-up">
+          <i  >
             <span>
               <FaLinkedinIn />
             </span>
@@ -61,7 +61,7 @@ export default function Contato() {
               Linkedin
             </a>
           </i>
-          <i className="fade-up">
+          <i >
             <span>
               <FaGithub />
             </span>
@@ -79,18 +79,19 @@ export default function Contato() {
           method="POST"
           action="https://formsubmit.co/jonthanrdo@gmail.com"
           enctype="multipart/form-data"
+          className="fade-up"
         >
-          <input type="text" name="Nome" placeholder="Nome" id="nome" className="fade-up"/>
-          <input type="email" name="Email" placeholder="Email" id="email" className="fade-up" />
+          <input type="text" name="Nome" placeholder="Nome" id="nome" />
+          <input type="email" name="Email" placeholder="Email" id="email"  />
           <textarea
             cols="30"
             name="Mensagem"
             rows="10"
             placeholder="Mensagem"
             id="msg"
-             className="fade-up"
+             
           ></textarea>
-          <span  className="fade-up">
+          <span  >
             <button type="submit">Enviar</button>
           </span>
         </form>

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import perfil from "../img/perfil-sem-fundo.png";
+import perfil from "../img/perfil.webp";
 import curriculo from "../arquivos/curriculo.pdf";
 import "../styles/sobre.scss";
 
@@ -26,8 +26,6 @@ export default function Sobre() {
         <img
           src={perfil}
           alt="Jonathan Rianelli - Desenvolvedor Web"
-          loading="lazy"
-          decoding="async"
         />
       </div>
 

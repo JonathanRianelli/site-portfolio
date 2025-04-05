@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.28837ef2.css",
-    "main.js": "/static/js/main.c292de40.js",
+    "main.css": "/static/css/main.3c8d5801.css",
+    "main.js": "/static/js/main.2175b53b.js",
     "static/js/787.8e198dab.chunk.js": "/static/js/787.8e198dab.chunk.js",
     "static/media/vz-cell.gif": "/static/media/vz-cell.b73287f925d873a038a8.gif",
     "static/media/hotel.webp": "/static/media/hotel.a4d88aa2c4a697fec305.webp",
     "static/media/pokecard.gif": "/static/media/pokecard.12424e273c5cdfbb6e67.gif",
-    "static/media/perfil-sem-fundo.png": "/static/media/perfil-sem-fundo.9b21738a89d9acef42b5.png",
     "static/media/link.webp": "/static/media/link.e50f9f1d4892bde850b1.webp",
     "static/media/crud.webp": "/static/media/crud.16b4d315f03cd6b1e852.webp",
     "static/media/text-to-speech.gif": "/static/media/text-to-speech.f450dda28af15093db23.gif",
@@ -14,16 +13,16 @@
     "static/media/calculadora.gif": "/static/media/calculadora.710eca9e96f46a344ad1.gif",
     "static/media/pokedex.webp": "/static/media/pokedex.5947f4227ebae506e451.webp",
     "static/media/curriculo.pdf": "/static/media/curriculo.7820a04f37cf5a85133b.pdf",
+    "static/media/perfil.webp": "/static/media/perfil.ad0b9e854ffb5b85059e.webp",
     "static/media/clima.webp": "/static/media/clima.1a218c80494427940c98.webp",
-    "static/media/textura15.png": "/static/media/textura15.4392677c9d079a6b583c.png",
     "static/media/jogo-da-velha.webp": "/static/media/jogo-da-velha.5534bd6b00453934ecc8.webp",
     "index.html": "/index.html",
-    "main.28837ef2.css.map": "/static/css/main.28837ef2.css.map",
-    "main.c292de40.js.map": "/static/js/main.c292de40.js.map",
+    "main.3c8d5801.css.map": "/static/css/main.3c8d5801.css.map",
+    "main.2175b53b.js.map": "/static/js/main.2175b53b.js.map",
     "787.8e198dab.chunk.js.map": "/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28837ef2.css",
-    "static/js/main.c292de40.js"
+    "static/css/main.3c8d5801.css",
+    "static/js/main.2175b53b.js"
   ]
 }
