@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c8d5801.css",
+    "main.css": "/static/css/main.6f07bc34.css",
     "main.js": "/static/js/main.2175b53b.js",
     "static/js/787.8e198dab.chunk.js": "/static/js/787.8e198dab.chunk.js",
     "static/media/vz-cell.gif": "/static/media/vz-cell.b73287f925d873a038a8.gif",
@@ -17,12 +17,12 @@
     "static/media/clima.webp": "/static/media/clima.1a218c80494427940c98.webp",
     "static/media/jogo-da-velha.webp": "/static/media/jogo-da-velha.5534bd6b00453934ecc8.webp",
     "index.html": "/index.html",
-    "main.3c8d5801.css.map": "/static/css/main.3c8d5801.css.map",
+    "main.6f07bc34.css.map": "/static/css/main.6f07bc34.css.map",
     "main.2175b53b.js.map": "/static/js/main.2175b53b.js.map",
     "787.8e198dab.chunk.js.map": "/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c8d5801.css",
+    "static/css/main.6f07bc34.css",
     "static/js/main.2175b53b.js"
   ]
 }
