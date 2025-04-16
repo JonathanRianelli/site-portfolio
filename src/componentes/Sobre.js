@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import perfil from "../img/perfil.webp";
-import curriculo from "../arquivos/curriculo.pdf";
+import curriculo from "../arquivos/curriculo jonathan rianelli.pdf";
 import "../styles/sobre.scss";
 
 export default function Sobre() {
