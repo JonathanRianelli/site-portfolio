@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6f07bc34.css",
-    "main.js": "/static/js/main.a260f85f.js",
+    "main.js": "/static/js/main.83945457.js",
     "static/js/787.8e198dab.chunk.js": "/static/js/787.8e198dab.chunk.js",
     "static/media/vz-cell.gif": "/static/media/vz-cell.b73287f925d873a038a8.gif",
     "static/media/hotel.webp": "/static/media/hotel.a4d88aa2c4a697fec305.webp",
@@ -12,17 +12,17 @@
     "static/media/todo.webp": "/static/media/todo.7b8cfa2d62b9d1cf564a.webp",
     "static/media/calculadora.gif": "/static/media/calculadora.710eca9e96f46a344ad1.gif",
     "static/media/pokedex.webp": "/static/media/pokedex.5947f4227ebae506e451.webp",
-    "static/media/curriculo jonathan rianelli.pdf": "/static/media/curriculo jonathan rianelli.8ed00360925dc002ca03.pdf",
+    "static/media/curriculo jonathan rianelli.pdf": "/static/media/curriculo jonathan rianelli.aaf48c074890ac2722db.pdf",
     "static/media/perfil.webp": "/static/media/perfil.ad0b9e854ffb5b85059e.webp",
     "static/media/clima.webp": "/static/media/clima.1a218c80494427940c98.webp",
     "static/media/jogo-da-velha.webp": "/static/media/jogo-da-velha.5534bd6b00453934ecc8.webp",
     "index.html": "/index.html",
     "main.6f07bc34.css.map": "/static/css/main.6f07bc34.css.map",
-    "main.a260f85f.js.map": "/static/js/main.a260f85f.js.map",
+    "main.83945457.js.map": "/static/js/main.83945457.js.map",
     "787.8e198dab.chunk.js.map": "/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f07bc34.css",
-    "static/js/main.a260f85f.js"
+    "static/js/main.83945457.js"
   ]
 }

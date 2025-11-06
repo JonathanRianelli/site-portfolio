@@ -32,10 +32,10 @@ export default function Sobre() {
       <div>
         <h2 className="fade-up">Jonathan Rianelli</h2>
 
-        <h3 className="fade-up">Desenvolvedor Web</h3>
+        <h3 className="fade-up">Desenvolvedor FullStack</h3>
 
         <p className="fade-up">
-        Sou Jonathan Rianelli, desenvolvedor web apaixonado por tecnologia. Em 2018, trabalhei na manutenção de smartphones, mas foi na programação que encontrei minha verdadeira vocação, iniciando estudos autodidatas e desenvolvendo projetos com diversas tecnologias. Atualmente curso Análise e Desenvolvimento de Sistemas (2024) e atuo como freelancer, aplicando meus conhecimentos em projetos reais - alguns dos quais você pode conferir abaixo na seção de projetos.
+        Sou desenvolvedor FullStack com mais de 3 anos de experiência na criação de aplicações web modernas e performáticas. Atuo como freelancer desenvolvendo soluções com React, Node.js, MySQL e integração de APIs, sempre com atenção à usabilidade e qualidade do código. Atualmente curso Análise e Desenvolvimento de Sistemas (2024), aplicando meus conhecimentos em projetos reais.
         </p>
 
         <div className="fade-up" id="btnBox">
