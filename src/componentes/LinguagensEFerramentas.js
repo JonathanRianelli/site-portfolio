@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { SiStyledcomponents } from "react-icons/si";
 import 'swiper/css'
 import { Pagination } from "swiper";
+import n8nLogo from "../img/n8n-color.svg";
 import "../styles/linguagenseferramentas.scss";
 
 export default function LinguagensEFerramentas() {
@@ -66,6 +67,10 @@ export default function LinguagensEFerramentas() {
                 <SwiperSlide>
                     <span>MySQL</span>
                     <i className="devicon-mysql-plain colored"></i>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <span>PostgreSQL</span>
+                    <i className="devicon-postgresql-plain colored"></i>
                 </SwiperSlide>
                 <SwiperSlide>
                     <span>Python</span>
@@ -163,6 +168,10 @@ export default function LinguagensEFerramentas() {
                 <SwiperSlide>
                     <span>Canva</span>
                     <i className="devicon-canva-original colored"></i>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <span>n8n</span>
+                    <img src={n8nLogo} alt="n8n" />
                 </SwiperSlide>
             </Swiper>
         </section>

@@ -35,7 +35,7 @@ export default function Sobre() {
         <h3 className="fade-up">Desenvolvedor FullStack</h3>
 
         <p className="fade-up">
-        Sou desenvolvedor FullStack com mais de 3 anos de experiência na criação de aplicações web modernas e performáticas. Atuo como freelancer desenvolvendo soluções com React, Node.js, MySQL e integração de APIs, sempre com atenção à usabilidade e qualidade do código. Atualmente curso Análise e Desenvolvimento de Sistemas (2024), aplicando meus conhecimentos em projetos reais.
+        Desenvolvedor FullStack especializado em criar aplicações web robustas e automações corporativas. Formado em Análise e Desenvolvimento de Sistemas, construo soluções completas utilizando tecnologias como React, Node.js, MySQL e PostgreSQL. Com mais de 4 anos de experiência, desenvolvo desde sistemas de gestão interna até fluxos avançados de automação com Python e n8n, unindo estética limpa, alta performance e código escalável.
         </p>
 
         <div className="fade-up" id="btnBox">
