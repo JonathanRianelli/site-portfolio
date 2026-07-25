@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.55bb8fa4.css",
-    "main.js": "/static/js/main.b4ab9612.js",
+    "main.css": "/static/css/main.458359f2.css",
+    "main.js": "/static/js/main.ba27f369.js",
     "static/js/787.8e198dab.chunk.js": "/static/js/787.8e198dab.chunk.js",
     "static/media/vz-cell.gif": "/static/media/vz-cell.b73287f925d873a038a8.gif",
     "static/media/hotel.webp": "/static/media/hotel.a4d88aa2c4a697fec305.webp",
@@ -16,13 +16,14 @@
     "static/media/perfil.webp": "/static/media/perfil.ad0b9e854ffb5b85059e.webp",
     "static/media/clima.webp": "/static/media/clima.1a218c80494427940c98.webp",
     "static/media/jogo-da-velha.webp": "/static/media/jogo-da-velha.5534bd6b00453934ecc8.webp",
+    "static/media/n8n-color.svg": "/static/media/n8n-color.c2fc14347953803bb2bee77ec83ff372.svg",
     "index.html": "/index.html",
-    "main.55bb8fa4.css.map": "/static/css/main.55bb8fa4.css.map",
-    "main.b4ab9612.js.map": "/static/js/main.b4ab9612.js.map",
+    "main.458359f2.css.map": "/static/css/main.458359f2.css.map",
+    "main.ba27f369.js.map": "/static/js/main.ba27f369.js.map",
     "787.8e198dab.chunk.js.map": "/static/js/787.8e198dab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55bb8fa4.css",
-    "static/js/main.b4ab9612.js"
+    "static/css/main.458359f2.css",
+    "static/js/main.ba27f369.js"
   ]
 }
