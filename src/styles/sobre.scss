@@ -73,6 +73,37 @@ $azulClaro: #6ec3f4;
   }
 }
 
+@media (min-width: 1440px) {
+  #sobre {
+    min-height: calc(100vh - 130px);
+    margin: 0 120px;
+    align-items: center;
+
+    img {
+      width: 480px;
+    }
+
+    h2 {
+      font-size: 62px;
+    }
+
+    h3 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 1.25em;
+      max-width: 760px;
+    }
+
+    #btnBox #btn {
+      font-size: 1.25em;
+      width: 230px;
+      padding: 13px;
+    }
+  }
+}
+
 @media (max-width: 1130px) {
   #sobre {
     text-align: center;

@@ -78,7 +78,21 @@ header {
   }
 }
 
-@media (min-width: 1131px) {
+@media (min-width: 1131px) and (max-width: 1439px) {
+  body {
+    overflow: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    height: 130px;
+
+    nav ul li {
+      font-size: 26px;
+    }
+  }
+
   body {
     overflow: auto;
   }

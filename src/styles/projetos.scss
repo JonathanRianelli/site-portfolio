@@ -161,6 +161,30 @@ $azulClaro: #6ec3f4;
   }
 }
 
+@media (min-width: 1440px) {
+  #projetos .swiper {
+    max-width: 1600px;
+    height: 1060px;
+
+    .swiper-slide {
+      height: 480px;
+
+      h3 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .botoes button {
+        font-size: 16px;
+        padding: 10px 22px;
+      }
+    }
+  }
+}
+
 @media (max-width: 900px) {
   #projetos > .swiper {
     height: 550px;
