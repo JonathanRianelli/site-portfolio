@@ -1,35 +1,177 @@
+// ============================================
+// HEADER
+// ============================================
+
 $cinzaClaro: #1d1d1d;
 $cinzaEscuro: #171717;
 $azulEscuro: #3a8dff;
 $azulClaro: #6ec3f4;
+$transition: 0.3s ease;
 
+// Compensar header fixo na âncora
+html {
+  scroll-padding-top: 90px;
+}
 
+// ============================================
+// HEADER
+// ============================================
 header {
-  background-color: hsla(0, 0%, 5%, 0.6);
-  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  background: hsla(0, 0%, 5%, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: height $transition, background $transition, box-shadow $transition;
+  box-sizing: border-box;
 
-  #navbarbtn {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.15);
-    position: fixed;
-    right: 0;
-    top: 0;
-    cursor: pointer;
-    border-radius: 50%;
-    margin: 30px;
-    padding: 10px 16px;
-    -webkit-tap-highlight-color: transparent;
+  // Header compacto ao scrollar
+  &.scrolled {
+    height: 64px;
+    background: hsla(0, 0%, 5%, 0.85);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  }
 
-    .linha {
-      position: relative;
-      background-color: $azulEscuro;
-      margin: 8px 0;
-      height: 3px;
-      width: 28px;
-      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  // ==========================================
+  // LOGO
+  // ==========================================
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      z-index: 6;
+
+      .logo-bar {
+        display: block;
+        width: 3px;
+        height: 24px;
+        border-radius: 2px;
+        background: linear-gradient(180deg, $azulEscuro, $azulClaro);
+        transition: transform 0.3s ease;
+        transform: scaleY(1);
+        transform-origin: bottom;
+        flex-shrink: 0;
+      }
+
+      .logo-text {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.9);
+        letter-spacing: 0.3px;
+        transition: font-size $transition;
+      }
+
+      &:hover .logo-bar {
+        transform: scaleY(1.2);
+      }
+
+    &:focus-visible {
+      outline: 2px solid $azulClaro;
+      outline-offset: 4px;
+      border-radius: 4px;
     }
   }
 
+  // ==========================================
+  // HAMBURGUER BTN
+  // ==========================================
+  #navbarbtn {
+    display: none;
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 6;
+    transition: background $transition;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $azulClaro;
+      outline-offset: 4px;
+    }
+
+    .linha {
+      display: block;
+      position: absolute;
+      left: 50%;
+      background-color: $azulClaro;
+      height: 2px;
+      width: 24px;
+      border-radius: 2px;
+      transform: translateX(-50%);
+      transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
+    }
+
+    #l1 {
+      top: 15px;
+    }
+
+    #l2 {
+      top: 23px;
+    }
+
+    #l3 {
+      top: 31px;
+    }
+
+    // Estado ativo → X
+    &.ativo {
+      #l1 {
+        opacity: 0;
+      }
+
+      #l2 {
+        top: 23px;
+        transform: translateX(-50%) rotate(-135deg);
+      }
+
+      #l3 {
+        top: 23px;
+        transform: translateX(-50%) rotate(135deg);
+      }
+    }
+  }
+
+  // ==========================================
+  // OVERLAY MOBILE
+  // ==========================================
+  .overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+
+    &.ativo {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  // ==========================================
+  // NAVEGAÇÃO DESKTOP
+  // ==========================================
   nav {
     height: 100%;
 
@@ -37,152 +179,286 @@ header {
       display: flex;
       align-items: center;
       height: 100%;
+      gap: 4px;
 
       li {
-        font-size: 21px;
-        margin: 0 40px;
-        padding: 5px;
+        font-size: 18px;
         cursor: pointer;
 
         a {
           display: inline-block;
-          color: $azulClaro;
-          padding: 10px;
-          transition: all 0.3s ease-out;
+          color: rgba(255, 255, 255, 0.65);
+          padding: 8px 16px;
+          border-radius: 8px;
+          transition: color $transition, background $transition;
           position: relative;
-          text-align: center;
-          isolation: isolate; // Contém o pseudo-elemento
+          font-weight: 400;
 
           &::after {
             content: "";
             position: absolute;
-            bottom: 0;
-            left: 50%; // Começa do centro
+            bottom: 2px;
+            left: 50%;
             width: 0;
             height: 2px;
             background: $azulClaro;
-            transform: translateX(-50%); // Centraliza
-            transition: width 0.2s ease-out;
+            transform: translateX(-50%);
+            transition: width 0.2s ease;
           }
 
           &:hover {
-            color: lighten($azulClaro, 10%);
+            color: #fff;
+            background: rgba(255, 255, 255, 0.05);
 
             &::after {
-              width: 100%;
+              width: 60%;
             }
+          }
+
+          &:focus-visible {
+            outline: 2px solid $azulClaro;
+            outline-offset: 2px;
+          }
+        }
+
+        // Seção ativa
+        &.active a {
+          color: $azulClaro;
+          background: rgba($azulClaro, 0.08);
+
+          &::after {
+            width: 60%;
           }
         }
       }
     }
   }
-}
 
-@media (min-width: 1131px) and (max-width: 1439px) {
-  body {
-    overflow: auto;
+  // Reduzir movimento
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+    }
   }
 }
 
+// ============================================
+// 1440px+
+// ============================================
 @media (min-width: 1440px) {
+  html {
+    scroll-padding-top: 110px;
+  }
+
   header {
-    height: 130px;
+    height: 100px;
+    padding: 0 80px;
+
+    &.scrolled {
+      height: 72px;
+    }
 
     nav ul li {
-      font-size: 26px;
+      font-size: 20px;
     }
-  }
-
-  body {
-    overflow: auto;
   }
 }
 
+// ============================================
+// ≤ 1130px (Mobile)
+// ============================================
 @media (max-width: 1130px) {
-  header {
-    background-color: #00000000;
-    height: fit-content;
+  html {
+    scroll-padding-top: 80px;
+  }
 
+  header {
+    height: 70px;
+    padding: 0 24px;
+    background: transparent;
+    backdrop-filter: none;
+    border-bottom: none;
+
+    &.scrolled {
+      height: 60px;
+      background: hsla(0, 0%, 5%, 0.8);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    // Logo
+    .logo {
+      .logo-bar {
+        height: 20px;
+      }
+      .logo-text {
+        font-size: 16px;
+      }
+    }
+
+    &.scrolled .logo {
+      .logo-bar {
+        height: 18px;
+      }
+      .logo-text {
+        font-size: 14px;
+      }
+    }
+
+    // Hamburguer aparece
     #navbarbtn {
       display: block;
-      z-index: 5;
     }
 
-    #navbarbtn.ativo {
-      #l1 {
-        opacity: 0;
-        transition: 0.3s ease-in-out;
-      }
-
-      #l2 {
-        padding: 0;
-        margin: 0;
-        transform: rotate(-135deg);
-        transition: 0.2s ease-in-out;
-      }
-
-      #l3 {
-        padding: 0;
-        margin: 0;
-        transform: rotate(135deg);
-        top: -3px;
-        transition: 0.3s ease-in-out;
-      }
+    // Overlay aparece
+    .overlay {
+      display: block;
     }
 
+    // Nav
     nav {
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.9);
-      backdrop-filter: blur(3px);
       position: fixed;
       top: 0;
       right: 0;
-      width: 0;
+      height: 100vh;
+      width: min(340px, 80vw);
+      background: rgba(10, 10, 15, 0.97);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-left: 1px solid rgba(255, 255, 255, 0.06);
+      z-index: 4;
+      transform: translateX(100%);
+      transition: transform 0.4s ease, visibility 0.4s ease;
       visibility: hidden;
-      transition: 0.5s;
-      overflow-x: hidden;
-      overflow-y: hidden;
-      z-index: 3;
+      overflow-y: auto;
+      padding: 90px 24px 30px;
+      box-sizing: border-box;
+
+      &.ativo {
+        transform: translateX(0);
+        visibility: visible;
+      }
 
       ul {
-        height: 75vh;
         flex-direction: column;
-        justify-content: start;
-        margin-top: 15vh;
+        align-items: stretch;
+        height: auto;
+        gap: 2px;
 
         li {
-          padding: 0;
+          opacity: 0;
+          transform: translateX(20px);
+          transition: opacity 0.3s ease, transform 0.3s ease;
+          transition-delay: calc(var(--i, 0) * 0.05s);
 
           a {
-            display: inline-block;
-            width: 243px;
-            margin: 0 auto;
-            padding: 30px;
-            border-radius: 0;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            padding: 14px 18px;
+            border-radius: 10px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 17px;
+            width: 100%;
+            box-sizing: border-box;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 
             &::after {
               display: none;
             }
 
             &:hover {
-              color: lighten($azulClaro, 10%);
-              transform: translateY(0) !important;
+              color: #fff;
+              background: rgba(255, 255, 255, 0.05);
             }
+          }
+
+          &.active a {
+            color: $azulClaro;
+            background: rgba($azulClaro, 0.1);
           }
         }
       }
-    }
 
-    nav.ativo {
-      visibility: visible;
-      width: 50vw;
+      // Stagger: quando nav está ativo, li aparecem
+      &.ativo ul li {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
   }
 }
 
+// ============================================
+// ≤ 580px (Mobile pequeno)
+// ============================================
 @media (max-width: 580px) {
-  header nav.ativo {
-    width: 100vw;
+  html {
+    scroll-padding-top: 70px;
+  }
+
+  header {
+    padding: 0 16px;
+    height: 60px;
+
+    &.scrolled {
+      height: 54px;
+    }
+
+    .logo {
+      .logo-bar {
+        height: 18px;
+      }
+      .logo-text {
+        font-size: 14px;
+      }
+    }
+
+    &.scrolled .logo {
+      .logo-bar {
+        height: 16px;
+      }
+      .logo-text {
+        font-size: 13px;
+      }
+    }
+
+    #navbarbtn {
+      width: 40px;
+      height: 40px;
+
+      .linha {
+        width: 20px;
+      }
+
+      #l1 {
+        top: 12px;
+      }
+
+      #l2 {
+        top: 19px;
+      }
+
+      #l3 {
+        top: 26px;
+      }
+
+      &.ativo {
+        #l2, #l3 {
+          top: 19px;
+        }
+      }
+    }
+
+    nav {
+      width: 100vw;
+      padding: 75px 16px 20px;
+      border-left: none;
+
+      ul li a {
+        padding: 12px 16px;
+        font-size: 16px;
+      }
+    }
   }
 }
