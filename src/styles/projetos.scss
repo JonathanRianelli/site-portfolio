@@ -18,189 +18,255 @@ $azulClaro: #6ec3f4;
     border-right: 4px solid $azulEscuro;
   }
 
-  .swiper {
+  .projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     width: 90vw;
-    height: 990px;
     max-width: 1368px;
+    margin: 0 auto;
+  }
 
-    .swiper-slide {
+  .projeto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    height: 420px;
+    width: 100%;
+
+    h3 {
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 20px;
+      color: white;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 350px;
+    }
+
+    .img-box {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      border-radius: 10px;
       position: relative;
-      margin-bottom: 30px;
-      text-align: center;
-      height: 420px;
+      overflow: hidden;
       width: 100%;
+      max-width: 382px;
+      aspect-ratio: 16/7;
+      margin: 0 auto;
+      transition: transform 0.4s ease;
 
-      h3 {
-        font-size: 25px;
-        font-weight: normal;
-        margin-bottom: 20px;
-        color: white;
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(black, 0.2);
       }
 
-      .img-box {
-        display: flex;
-        border-radius: 10px;
-        position: relative;
-        overflow: hidden;
-        max-width: 382px;
-        aspect-ratio: 16/7; 
-        margin: 0 auto;transition: transform 0.4s ease;
-  
-        &:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 20px rgba(black, 0.2);
-        }
-      
-
-        img,
-        video {
-          width: 100%;
-          height: auto;
-        }
-
-        .linguagens-usadas {
-          position: absolute;
-          bottom: 0;
-          height: 100%;
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          background-color: #000000d2;
-          backdrop-filter: blur(2px);
-          opacity: 0;
-          transition: 0.4s ease-in-out;
-
-          &:hover {
-            opacity: 1;
-          }
-
-          span {
-            font-size: 2em;
-          }
-
-          svg {
-            color: white;
-            font-size: 2.5em;
-          }
-        }
-      }
-
-      p {
-        margin: 0 auto;
-        max-width: 382px;
-        margin-top: 13px;
-        min-height: 100px;
-        font-size: 14px;
-        color: white;
-      }
-
-      .botoes {
-        margin: 0 auto;
-        max-width: 382px;
-        position: absolute;
-        display: flex;
-        justify-content: space-evenly;
+      img,
+      video {
         width: 100%;
-        bottom: 0;
+        height: auto;
+      }
 
-        button {
-          background-color: transparent;
-          color: white;
-          font-size: 15px;
-          padding: 8px 18px;
-          border-radius: 30px;
-          border: 2px solid $azulEscuro;
-          cursor: pointer;
+      .linguagens-usadas {
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #000000d2;
+        backdrop-filter: blur(2px);
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        span {
+          font-size: 3em;
+          position: relative;
+          z-index: 2;
           transition: all 0.3s ease;
 
           &:hover {
-            background-color: $azulEscuro;
-            transition: 0.3s ease-in-out;
-            transform: translateY(-3px);
-            box-shadow: 0 4px 15px rgba($azulEscuro, 0.4);
+            transform: scale(1.2);
           }
-          &:active {
-            transform: translateY(0);
-            transition: 0.1s ease-in-out;
+
+          svg {
+            position: relative;
+            z-index: 2;
           }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              currentColor 0%,
+              rgba(0, 0, 0, 0) 60%
+            );
+            opacity: 0;
+            z-index: 1;
+            pointer-events: none;
+            /* Suaviza a transição combinando opacidade e escala, com curva customizada */
+            transition:
+              opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: blur(12px);
+            will-change:
+              opacity, transform; /* Melhora a performance de renderização */
+          }
+
+          &:hover::after {
+            opacity: 0.5;
+            transform: translate(-50%, -50%) scale(1);
+          }
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 0;
+          height: 0;
+          border-radius: 50%;
+          background: radial-gradient(circle, currentColor 0%, transparent 70%);
+          opacity: 0;
+          transition: all 0.3s ease;
+          z-index: 1;
+        }
+
+        &:hover::before {
+          width: 100px;
+          height: 100px;
+          opacity: 0.3;
         }
       }
 
-      .botao-sozinho {
-        width: 240px;
+      .linguagens-usadas.sempre-visivel {
+        opacity: 1;
+        transition: none;
+        background-color: #000000a1;
+
+        span {
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+
+        &::before {
+          display: none;
+        }
       }
+    }
+
+    p {
+      margin: 0 auto;
+      max-width: 382px;
+      margin-top: 13px;
+      min-height: 100px;
+      font-size: 13px;
+      color: white;
+      line-height: 1.4;
+      overflow-wrap: break-word;
+    }
+
+    .botoes {
+      margin: 0 auto;
+      max-width: 382px;
+      position: absolute;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      bottom: 0;
+
+      button {
+        background-color: transparent;
+        color: white;
+        font-size: 15px;
+        padding: 8px 18px;
+        border-radius: 30px;
+        border: 2px solid $azulEscuro;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $azulEscuro;
+          transition: 0.3s ease-in-out;
+          transform: translateY(-3px);
+          box-shadow: 0 4px 15px rgba($azulEscuro, 0.4);
+        }
+        &:active {
+          transform: translateY(0);
+          transition: 0.1s ease-in-out;
+        }
+      }
+    }
+
+    .botao-sozinho {
+      width: 240px;
     }
   }
 
-  .swiper-slide img {
+  .projeto-card img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-
-  .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 12px;
-    color: #fff;
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid $azulEscuro;
-  }
-
-  .swiper-pagination-bullet-active {
-    color: #fff;
-    background-color: $azulEscuro;
-  }
 }
 
 @media (min-width: 1440px) {
-  #projetos .swiper {
+  #projetos .projetos-grid {
     max-width: 1600px;
-    height: 1060px;
+  }
 
-    .swiper-slide {
-      height: 480px;
+  #projetos .projeto-card {
+    height: 480px;
 
-      h3 {
-        font-size: 28px;
-      }
-
-      p {
-        font-size: 16px;
-      }
-
-      .botoes button {
-        font-size: 16px;
-        padding: 10px 22px;
-      }
+    h3 {
+      font-size: 22px;
     }
+
+    p {
+      font-size: 16px;
+    }
+
+    .botoes button {
+      font-size: 16px;
+      padding: 10px 22px;
+    }
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1325px) {
+  #projetos .projetos-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 900px) {
-  #projetos > .swiper {
-    height: 550px;
-
-    .swiper-slide {
-      cursor: grab;
-    }
+  #projetos .projetos-grid {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 420px) {
-  #projetos > .swiper {
-    height: 500px;
-
-    .swiper-slide > p {
-      font-size: 14px;
-    }
+  #projetos .projeto-card > p {
+    font-size: 14px;
   }
 }

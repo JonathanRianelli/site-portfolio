@@ -3,7 +3,7 @@ import ScrollReveal from "scrollreveal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SiStyledcomponents } from "react-icons/si";
 import 'swiper/css'
-import { Pagination } from "swiper";
+import { Pagination } from "swiper/modules";
 import n8nLogo from "../img/n8n-color.svg";
 import "../styles/linguagenseferramentas.scss";
 
