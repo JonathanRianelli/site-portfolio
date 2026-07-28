@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ScrollReveal from "scrollreveal";
-import { FiExternalLink, FiLock, FiCode } from "react-icons/fi";
-import { BsStars } from "react-icons/bs";
+import { FiExternalLink, FiLock, FiCode, FiClipboard, FiTrendingUp } from "react-icons/fi";
 import { HiOutlineCube } from "react-icons/hi";
-import { IoRocketOutline } from "react-icons/io5";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
@@ -84,7 +82,7 @@ export default function Projetos() {
         { icone: "devicon-postgresql-plain colored", nome: "PostgreSQL" },
       ],
       tipo: "corporativo",
-      placeholderIcon: <BsStars />,
+      placeholderIcon: <FiClipboard />,
     },
     {
       titulo: "Sistema de Gestão Empresarial",
@@ -108,7 +106,7 @@ export default function Projetos() {
         { icone: "devicon-postgresql-plain colored", nome: "PostgreSQL" },
       ],
       tipo: "corporativo",
-      placeholderIcon: <IoRocketOutline />,
+      placeholderIcon: <FiTrendingUp />,
     },
     {
       titulo: "Automações Corporativas",
