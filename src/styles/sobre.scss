@@ -24,6 +24,43 @@ $azulClaro: #6ec3f4;
     }
   }
 
+  // Badge "Disponível para projetos"
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    border-radius: 100px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #22c55e;
+    margin-bottom: 12px;
+    letter-spacing: 0.3px;
+    width: fit-content;
+
+    .status-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      animation: pulseDot 2s ease-in-out infinite;
+    }
+  }
+
+  @keyframes pulseDot {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(0.8);
+    }
+  }
+
   h2 {
     font-size: 50px;
     font-weight: normal;
@@ -43,31 +80,44 @@ $azulClaro: #6ec3f4;
   }
 
   #btnBox {
-    text-align: center;
+    text-align: left;
     -webkit-tap-highlight-color: transparent;
+    margin-top: 30px;
 
     #btn {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       font-size: 1.1em;
-      background-color: transparent;
+      font-weight: 500;
+      background: transparent;
       color: white;
       border: 2px solid $azulEscuro;
-      padding: 10px;
-      border-radius: 30px;
-      width: 180px;
-      margin: 45px 0;
+      padding: 12px 28px;
+      border-radius: 50px;
       cursor: pointer;
       transition: all 0.3s ease;
+      text-decoration: none;
+
+      .btn-icon {
+        font-size: 1.15em;
+        transition: transform 0.3s ease;
+      }
 
       &:hover {
-        background-color: $azulEscuro;
-        transition: 0.3s ease-in-out;
+        background: linear-gradient(135deg, $azulEscuro, #2a6fd4);
+        border-color: transparent;
         transform: translateY(-3px);
-        box-shadow: 0 4px 15px rgba($azulEscuro, 0.4);
+        box-shadow: 0 8px 30px rgba($azulEscuro, 0.4);
+
+        .btn-icon {
+          transform: translateY(2px);
+        }
       }
       &:active {
         transform: translateY(0);
         transition: 0.1s ease-in-out;
+        box-shadow: 0 2px 10px rgba($azulEscuro, 0.3);
       }
     }
   }
@@ -98,8 +148,8 @@ $azulClaro: #6ec3f4;
 
     #btnBox #btn {
       font-size: 1.25em;
-      width: 230px;
-      padding: 13px;
+      width: auto;
+      padding: 16px 36px;
     }
   }
 }
@@ -117,6 +167,10 @@ $azulClaro: #6ec3f4;
     h3 {
       font-size: 28px;
     }
+
+    .status-badge {
+      margin: 0 auto 12px;
+    }
   }
 }
 
@@ -132,6 +186,11 @@ $azulClaro: #6ec3f4;
 
     p {
       font-size: 16px;
+    }
+
+    #btnBox #btn {
+      font-size: 1em;
+      padding: 12px 24px;
     }
   }
 }

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
+import { FiDownload } from "react-icons/fi";
 import perfil from "../img/perfil.webp";
 import curriculo from "../arquivos/curriculo-jonathan-rianelli-v2.pdf";
 import "../styles/sobre.scss";
@@ -14,7 +15,7 @@ export default function Sobre() {
       reset: false,
     });
 
-    // Aplica a animação nos elementos com a classe 'elemento'
+    // Aplica a animação nos elementos com a classe 'fade-up'
     scrollReveal.reveal(".fade-up", {
       interval: 200,
     });
@@ -30,6 +31,11 @@ export default function Sobre() {
       </div>
 
       <div>
+        <div className="status-badge fade-up">
+          <span className="status-dot" />
+          Disponível para projetos
+        </div>
+
         <h2 className="fade-up">Jonathan Rianelli</h2>
 
         <h3 className="fade-up">Desenvolvedor FullStack</h3>
@@ -44,6 +50,7 @@ export default function Sobre() {
             download="Currículo Jonathan Rianelli de Oliveira"
             id="btn"
           >
+            <FiDownload className="btn-icon" />
             Baixar Currículo
           </a>
         </div>

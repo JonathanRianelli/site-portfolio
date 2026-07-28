@@ -43,25 +43,6 @@ p {
   color: #d9d9d9;
 }
 
-.top-btn {
-  -webkit-tap-highlight-color: transparent;
-  position: fixed;
-  right: 40px;
-  bottom: 20px;
-  color: $azulEscuro;
-  font-size: 3em;
-  cursor: pointer;
-  z-index: 2;
-  opacity: 0;
-  animation: fadeIn 0.3s ease-in forwards;
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-}
-
 @media (max-width: 600px) {
   #projetos h2,
   #lef h2,

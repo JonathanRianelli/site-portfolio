@@ -3,6 +3,20 @@ $cinzaEscuro: #171717;
 $azulEscuro: #3a8dff;
 $azulClaro: #6ec3f4;
 
+// ============================================
+// GLASS CARD MIXIN
+// ============================================
+@mixin glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+}
+
+// ============================================
+// SEÇÃO PROJETOS
+// ============================================
 #projetos {
   margin-bottom: 90px;
   text-align: center;
@@ -18,6 +32,7 @@ $azulClaro: #6ec3f4;
     border-right: 4px solid $azulEscuro;
   }
 
+  // ========== GRID ==========
   .projetos-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -27,51 +42,106 @@ $azulClaro: #6ec3f4;
     margin: 0 auto;
   }
 
+  // ========== CARD ==========
   .projeto-card {
+    @include glass-card;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-    margin-bottom: 30px;
-    text-align: center;
-    height: 420px;
-    width: 100%;
 
-    h3 {
-      font-size: 20px;
-      font-weight: normal;
-      margin-bottom: 20px;
-      color: white;
-      line-height: 1.2;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 350px;
+    // Glow sutil na borda superior
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba($azulClaro, 0.3), transparent);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: 2;
     }
 
+    &:hover {
+      transform: translateY(-6px);
+      border-color: rgba($azulClaro, 0.15);
+      background: rgba(255, 255, 255, 0.035);
+      box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.3),
+        0 0 30px rgba($azulEscuro, 0.08);
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    // ========== IMAGEM ==========
     .img-box {
-      display: flex;
-      border-radius: 10px;
       position: relative;
-      overflow: hidden;
       width: 100%;
-      max-width: 382px;
       aspect-ratio: 16/7;
-      margin: 0 auto;
-      transition: transform 0.4s ease;
+      overflow: hidden;
 
-      &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(black, 0.2);
-      }
-
-      img,
-      video {
+      img {
+        display: block;
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
       }
 
-      .linguagens-usadas {
+      // Placeholder gradiente para projetos sem imagem
+      .img-placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+          animation: gradientShift 6s ease-in-out infinite alternate;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          inset: -50%;
+          background: radial-gradient(circle at 30% 50%, rgba($azulClaro, 0.08) 0%, transparent 50%);
+          animation: glowDrift 8s ease-in-out infinite alternate;
+        }
+
+        .placeholder-icon {
+          position: relative;
+          z-index: 0;
+          font-size: 3.5em;
+          color: rgba($azulClaro, 0.3);
+          filter: drop-shadow(0 0 20px rgba($azulClaro, 0.1));
+        }
+      }
+
+      @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+      }
+
+      @keyframes glowDrift {
+        0% { transform: translate(0, 0); }
+        100% { transform: translate(20%, 10%); }
+      }
+
+      // ========== OVERLAY DE TECNOLOGIAS ==========
+      .tech-overlay {
         position: absolute;
         bottom: 0;
         height: 100%;
@@ -81,192 +151,313 @@ $azulClaro: #6ec3f4;
         align-items: center;
         background-color: #000000d2;
         backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
         opacity: 0;
-        transition: 0.4s ease-in-out;
+        transition: opacity 0.4s ease-in-out;
+        z-index: 1;
 
-        &:hover {
-          opacity: 1;
-        }
-
-        span {
+        .tech-icon {
           font-size: 3em;
           position: relative;
           z-index: 2;
-          transition: all 0.3s ease;
+          opacity: 0;
+          transform: translateY(15px);
+          transition:
+            opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          transition-delay: calc(var(--i, 0) * 0.1s);
 
           &:hover {
             transform: scale(1.2);
           }
 
-          svg {
+          // Glow nos devicons (coloridos pela classe 'colored' do devicon)
+          i {
             position: relative;
             z-index: 2;
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%) scale(0.9);
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              background: radial-gradient(circle, currentColor 0%, transparent 60%);
+              opacity: 0;
+              z-index: 1;
+              pointer-events: none;
+              transition:
+                opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+              filter: blur(12px);
+              will-change: opacity, transform;
+            }
+
+            &:hover::after {
+              opacity: 0.5;
+              transform: translate(-50%, -50%) scale(1);
+            }
           }
 
-          &::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0.9);
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: radial-gradient(
-              circle,
-              currentColor 0%,
-              rgba(0, 0, 0, 0) 60%
-            );
-            opacity: 0;
-            z-index: 1;
-            pointer-events: none;
-            /* Suaviza a transição combinando opacidade e escala, com curva customizada */
-            transition:
-              opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-              transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            filter: blur(12px);
-            will-change:
-              opacity, transform; /* Melhora a performance de renderização */
+          // Wrapper da imagem n8n (img não suporta ::after, então usamos o wrapper)
+          .tech-img-wrapper {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .tech-img {
+              width: 60px;
+              height: 60px;
+              filter: invert(1);
+              display: block;
+            }
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%) scale(0.9);
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              background: radial-gradient(circle, #EA4B71 0%, transparent 60%);
+              opacity: 0;
+              z-index: 1;
+              pointer-events: none;
+              transition:
+                opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+              filter: blur(12px);
+              will-change: opacity, transform;
+            }
+
+            &:hover::after {
+              opacity: 0.5;
+              transform: translate(-50%, -50%) scale(1);
+            }
           }
-
-          &:hover::after {
-            opacity: 0.5;
-            transform: translate(-50%, -50%) scale(1);
-          }
-        }
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 0;
-          height: 0;
-          border-radius: 50%;
-          background: radial-gradient(circle, currentColor 0%, transparent 70%);
-          opacity: 0;
-          transition: all 0.3s ease;
-          z-index: 1;
-        }
-
-        &:hover::before {
-          width: 100px;
-          height: 100px;
-          opacity: 0.3;
         }
       }
 
-      .linguagens-usadas.sempre-visivel {
+      // Hover no card: overlay aparece, ícones sobem, placeholder some
+      &:hover .tech-overlay {
         opacity: 1;
-        transition: none;
-        background-color: #000000a1;
 
-        span {
-          &:hover {
-            transform: scale(1.2);
-          }
+        .tech-icon {
+          opacity: 1;
+          transform: translateY(0);
         }
+      }
 
-        &::before {
-          display: none;
-        }
+      // No hover, esconde o placeholder inteiro (evita conflito visual)
+      &:hover .img-placeholder {
+        opacity: 0;
+        transition: opacity 0.2s ease;
       }
     }
 
-    p {
-      margin: 0 auto;
-      max-width: 382px;
-      margin-top: 13px;
-      min-height: 100px;
-      font-size: 13px;
-      color: white;
-      line-height: 1.4;
-      overflow-wrap: break-word;
+    // ========== CONTEÚDO ==========
+    .card-content {
+      padding: 16px 20px 0;
+      width: 100%;
+      box-sizing: border-box;
+      flex: 1;
+
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.92);
+        margin-bottom: 8px;
+        line-height: 1.3;
+      }
+
+      p {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.5;
+        margin-bottom: 12px;
+      }
     }
 
+    // ========== BOTÕES ==========
     .botoes {
-      margin: 0 auto;
-      max-width: 382px;
-      position: absolute;
-      display: flex;
-      justify-content: space-evenly;
+      padding: 0 20px 20px;
       width: 100%;
-      bottom: 0;
+      box-sizing: border-box;
+      margin-top: auto;
 
       button {
         background-color: transparent;
         color: white;
-        font-size: 15px;
-        padding: 8px 18px;
+        font-size: 14px;
+        padding: 8px 20px;
         border-radius: 30px;
         border: 2px solid $azulEscuro;
         cursor: pointer;
         transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        position: relative;
+        overflow: hidden;
+
+        .btn-icon {
+          font-size: 14px;
+          transition: transform 0.3s ease;
+        }
 
         &:hover {
-          background-color: $azulEscuro;
-          transition: 0.3s ease-in-out;
+          background: linear-gradient(135deg, $azulEscuro, #2a6fd4);
+          border-color: transparent;
           transform: translateY(-3px);
-          box-shadow: 0 4px 15px rgba($azulEscuro, 0.4);
+          box-shadow: 0 8px 30px rgba($azulEscuro, 0.4);
+
+          .btn-icon {
+            transform: translateX(3px);
+          }
         }
+
         &:active {
           transform: translateY(0);
           transition: 0.1s ease-in-out;
         }
+
+        &:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+      }
+
+      // Botão corporativo: hover com fundo azul transparente + glow
+      .btn-corporativo {
+        &:disabled:hover {
+          opacity: 0.5;
+          background: rgba($azulEscuro, 0.12);
+          border-color: $azulEscuro;
+          transform: none;
+          box-shadow: 0 0 20px rgba($azulEscuro, 0.15);
+
+          .btn-icon {
+            transform: none;
+          }
+        }
+      }
+
+      .botao-sozinho {
+        width: 100%;
+        justify-content: center;
       }
     }
-
-    .botao-sozinho {
-      width: 240px;
-    }
-  }
-
-  .projeto-card img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 }
 
+// ============================================
+// 1440px+
+// ============================================
 @media (min-width: 1440px) {
-  #projetos .projetos-grid {
-    max-width: 1600px;
-  }
+  #projetos {
+    margin-bottom: 120px;
 
-  #projetos .projeto-card {
-    height: 480px;
-
-    h3 {
-      font-size: 22px;
+    h2 {
+      font-size: 52px;
     }
 
-    p {
-      font-size: 16px;
+    .projetos-grid {
+      max-width: 1600px;
+      gap: 36px;
     }
 
-    .botoes button {
-      font-size: 16px;
-      padding: 10px 22px;
+    .projeto-card {
+      .card-content {
+        padding: 20px 24px 0;
+
+        h3 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .botoes {
+        padding: 0 24px 24px;
+
+        button {
+          font-size: 15px;
+          padding: 10px 24px;
+        }
+      }
     }
   }
 }
 
+// ============================================
+// 901px - 1325px (2 colunas)
+// ============================================
 @media (min-width: 901px) and (max-width: 1325px) {
   #projetos .projetos-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+// ============================================
+// ≤ 900px (1 coluna)
+// ============================================
 @media (max-width: 900px) {
-  #projetos .projetos-grid {
-    grid-template-columns: 1fr;
+  #projetos {
+    margin-bottom: 70px;
+
+    h2 {
+      font-size: 33px;
+    }
+
+    .projetos-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      width: 92vw;
+    }
+
+    .projeto-card {
+      .card-content {
+        padding: 14px 16px 0;
+
+        h3 {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+
+      .botoes {
+        padding: 0 16px 16px;
+
+        button {
+          font-size: 13px;
+          padding: 7px 18px;
+        }
+      }
+    }
   }
 }
 
+// ============================================
+// ≤ 420px (Mobile pequeno)
+// ============================================
 @media (max-width: 420px) {
-  #projetos .projeto-card > p {
-    font-size: 14px;
+  #projetos {
+    .projeto-card {
+      .card-content p {
+        font-size: 13px;
+      }
+    }
   }
 }

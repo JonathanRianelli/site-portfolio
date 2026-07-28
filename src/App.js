@@ -1,6 +1,4 @@
-import { useState, useEffect } from 'react';
 import "./styles/global.scss";
-import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { Fragment } from 'react';
 import { Helmet } from "react-helmet";
 import "swiper/css/pagination";
@@ -11,32 +9,8 @@ import LinguagensEFerramentas from "./componentes/LinguagensEFerramentas";
 import Contato from "./componentes/Contato";
 
 export default function App() {
-
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  const [showButton, setShowButton] = useState(false);
-
-  useEffect(() => {
-    function handleScroll() {
-      if (window.pageYOffset > window.innerHeight) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    }
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-
   return (
     <Fragment>
-
-      {showButton && (
-        <span className='top-btn' onClick={scrollToTop}><BsFillArrowUpCircleFill/></span>
-      )}
 
       <Helmet>
         <title>Jonathan Rianelli</title>

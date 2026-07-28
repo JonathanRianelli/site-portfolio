@@ -131,10 +131,10 @@ $azulClaro: #6ec3f4;
         transition: all 0.3s ease;
 
         &:hover {
-          background-color: $azulEscuro;
-          transition: 0.3s ease-in-out;
+          background: linear-gradient(135deg, $azulEscuro, #2a6fd4);
+          border-color: transparent;
           transform: translateY(-3px);
-          box-shadow: 0 4px 15px rgba($azulEscuro, 0.4);
+          box-shadow: 0 8px 30px rgba($azulEscuro, 0.4);
         }
         &:active {
           transform: translateY(0);
