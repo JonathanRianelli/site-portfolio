@@ -461,3 +461,44 @@ $azulClaro: #6ec3f4;
     }
   }
 }
+
+// ============================================
+// SWIPER MOBILE (≤ 900px)
+// ============================================
+@media (max-width: 900px) {
+  #projetos {
+    .projetos-swiper {
+      width: 100%;
+      padding: 0 0 40px 0;
+
+      .projeto-slide {
+        width: 85%;
+        height: auto;
+
+        .projeto-card {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      // Paginação (dots)
+      .swiper-pagination {
+        bottom: 0 !important;
+
+        .swiper-pagination-bullet {
+          width: 8px;
+          height: 8px;
+          background: rgba(255, 255, 255, 0.25);
+          opacity: 1;
+          transition: all 0.3s ease;
+
+          &-active {
+            width: 24px;
+            border-radius: 4px;
+            background: $azulEscuro;
+          }
+        }
+      }
+    }
+  }
+}
