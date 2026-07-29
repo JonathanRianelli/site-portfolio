@@ -24,52 +24,51 @@ export default function Contato() {
       <h2 >Contate-me</h2>
       <div>
         <nav className="fade-up">
-          <i >
-            <span>
-              <FaEnvelope />
-            </span>
+          <i>
             <a
               href="mailto:jonthanrdo@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
+              <span>
+                <FaEnvelope />
+              </span>
               jonthanrdo@gmail.com
             </a>
           </i>
-          <i  >
-            <span>
-              <FaWhatsapp />
-            </span>
+          <i>
             <a
               href="https://wa.me/5532999155737"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
+              <span>
+                <FaWhatsapp />
+              </span>
               +55 32 99915-5737
             </a>
           </i>
-          <i  >
-            <span>
-              <FaLinkedinIn />
-            </span>
+          <i>
             <a
               href="https://www.linkedin.com/in/jonathan-rianelli-de-oliveira-409609228/"
               target="_blank"
               rel="noopener noreferrer"
             >
+              <span>
+                <FaLinkedinIn />
+              </span>
               Linkedin
             </a>
           </i>
-          <i >
-            <span>
-              <FaGithub />
-            </span>
+          <i>
             <a
               href="https://github.com/JonathanRianelli"
               target="_blank"
               rel="noopener noreferrer"
             >
+              <span>
+                <FaGithub />
+              </span>
               GitHub
             </a>
           </i>
