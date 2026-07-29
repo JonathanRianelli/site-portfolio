@@ -12,144 +12,226 @@ $azulClaro: #6ec3f4;
     display: inline-block;
     font-size: 40px;
     font-weight: normal;
-    margin-bottom: 50px;
+    margin-bottom: 12px;
     color: $azulClaro;
     padding: 6px 20px;
     border-left: 4px solid $azulEscuro;
     border-right: 4px solid $azulEscuro;
   }
-  div {
+
+  .subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    margin-bottom: 50px;
+    letter-spacing: 0.3px;
+  }
+
+  > div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
+    gap: 40px;
+  }
 
-    nav {
+  /* ========== CONTACT CARDS ========== */
+  .contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 320px;
+    flex: 1;
+    max-width: 480px;
+  }
+
+  .contact-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-decoration: none;
+    padding: 18px 22px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 2px solid rgba(58, 141, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+
+    .card-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      min-width: 52px;
+      border-radius: 14px;
+      background: rgba(58, 141, 255, 0.1);
+      border: 2px solid rgba(58, 141, 255, 0.25);
+      color: $azulClaro;
+      font-size: 20px;
+      transition: all 0.4s ease;
+    }
+
+    .card-info {
       display: flex;
       flex-direction: column;
-      align-items: baseline;
+      align-items: flex-start;
+      gap: 2px;
 
-      i {
-        display: inline-flex;
-        margin: 10px;
-        display: flex;
-        align-items: center;
-        transition: transform 0.3s ease;
-        
-        &:hover {
-          transform: translateX(5px)!important;
-        }
-        
+      .card-label {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.4);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
 
-        span {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: transparent;
-          border: 2px solid $azulEscuro;
-          border-radius: 50%;
-          width: 65px;
-          height: 65px;
-          font-size: 27px;
-          color: $azulClaro;
-          transition: all 0.4s ease;
-        }
-
-        a {
-          color: white;
-          display: inline-flex;
-          align-items: center;
-          text-decoration: none;
-          transition: color 0.3s ease;
-          
-          &:hover {
-            color: $azulClaro;
-            text-decoration: none;
-          }
-        }
-
-        &:hover span {
-          background-color: $azulClaro;
-          color: $cinzaEscuro;
-          border-color: $azulClaro;
-        }
-
-        a span {
-          margin-right: 16px;
-        }
+      .card-value {
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.85);
+        font-weight: 400;
+        transition: color 0.3s ease;
       }
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      width: 600px;
-      text-align: right;
-      margin-top: 40px;
+    &:hover {
+      background: rgba(58, 141, 255, 0.08);
+      border-color: rgba(58, 141, 255, 0.35);
+      transform: translateX(6px);
 
-      input,
-      textarea {
-        transition: all 0.3s ease;
-
-        &:focus {
-          border-color: $azulClaro;
-          box-shadow: 0 0 10px rgba($azulEscuro, 1);
-        }
-      }
-      #nome {
-        background-color: hsla(0, 0%, 6%, 0.6);
-        margin-bottom: 10px;
-        border: 2px solid $azulEscuro;
-        padding: 10px;
-        border-radius: 8px;
-        height: 30px;
+      .card-icon {
+        background: rgba(58, 141, 255, 0.2);
+        border-color: $azulEscuro;
         color: white;
-
-        &::placeholder {
-          color: rgb(221, 221, 221);
-          opacity: 1;
-        }
-
-        &:focus {
-          outline: none;
-        }
+        box-shadow: 0 0 20px rgba(58, 141, 255, 0.25);
       }
 
-      #email {
-        @extend #nome;
-      }
-
-      #msg {
-        @extend #nome;
-        height: 130px;
-      }
-
-      button {
-        background-color: transparent;
-        color: white;
-        width: 130px;
-        font-size: 15px;
-        margin: 20px 15px;
-        padding: 8px 18px;
-        border-radius: 30px;
-        border: 2px solid $azulEscuro;
-        cursor: pointer;
-        transition: all 0.3s ease;
-
-        &:hover {
-          background: linear-gradient(135deg, $azulEscuro, #2a6fd4);
-          border-color: transparent;
-          transform: translateY(-3px);
-          box-shadow: 0 8px 30px rgba($azulEscuro, 0.4);
-        }
-        &:active {
-          transform: translateY(0);
-          transition: 0.1s ease-in-out;
-        }
+      .card-value {
+        color: $azulClaro;
       }
     }
   }
+
+  /* ========== FORM ========== */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    min-width: 320px;
+    flex: 1;
+    max-width: 600px;
+  }
+
+  .input-group {
+    position: relative;
+    flex: 1;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 20px 16px 8px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1.5px solid rgba(58, 141, 255, 0.2);
+      border-radius: 12px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.95rem;
+      font-family: "Montserrat", Arial, sans-serif;
+      outline: none;
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+
+      &:focus {
+        border-color: $azulClaro;
+        background: rgba(58, 141, 255, 0.06);
+        box-shadow: 0 0 0 3px rgba(58, 141, 255, 0.1);
+      }
+
+      &:not(:placeholder-shown) {
+        border-color: rgba(58, 141, 255, 0.35);
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 180px;
+    }
+
+    label {
+      position: absolute;
+      left: 16px;
+      top: calc(50% - 11px);
+      transform: translateY(-50%);
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.35);
+      pointer-events: none;
+      transition: all 0.25s ease;
+      background: transparent;
+      padding: 0 4px;
+    }
+
+    textarea ~ label {
+      top: 22px;
+      transform: none;
+    }
+
+    input:focus ~ label,
+    input:not(:placeholder-shown) ~ label,
+    textarea:focus ~ label,
+    textarea:not(:placeholder-shown) ~ label {
+      top: 6px;
+      transform: translateY(0);
+      font-size: 0.7rem;
+      color: $azulClaro;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  /* ========== BUTTON (padronizado com o resto da página) ========== */
+  .btn-send {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1em;
+    font-weight: 500;
+    background: transparent;
+    color: white;
+    border: 2px solid $azulEscuro;
+    padding: 12px 32px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    width: fit-content;
+    margin-top: 4px;
+
+    .btn-icon {
+      font-size: 1.1em;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      background: linear-gradient(135deg, $azulEscuro, #2a6fd4);
+      border-color: transparent;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba($azulEscuro, 0.4);
+
+      .btn-icon {
+        transform: translateX(3px) translateY(-1px);
+      }
+    }
+
+    &:active {
+      transform: translateY(0);
+      transition: 0.1s ease-in-out;
+      box-shadow: 0 2px 10px rgba($azulEscuro, 0.3);
+    }
+  }
 }
+
+/* ========== RESPONSIVO ========== */
 
 @media (min-width: 1440px) {
   #contato {
@@ -161,58 +243,140 @@ $azulClaro: #6ec3f4;
 
     h2 {
       font-size: 52px;
-      margin-bottom: 30px;
+      margin-bottom: 16px;
     }
 
-    & > div {
+    .subtitle {
+      font-size: 1.15rem;
+      margin-bottom: 60px;
+    }
+
+    > div {
       gap: 100px;
       width: 100%;
+    }
 
-      nav i {
-        margin: 16px;
+    .contact-card {
+      padding: 22px 28px;
 
-        span {
-          width: 90px;
-          height: 90px;
-          font-size: 36px;
-        }
-
-        a {
-          font-size: 22px;
-          margin-left: 20px;
-        }
+      .card-icon {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        font-size: 24px;
       }
 
-      form {
-        width: 720px;
-
-        input,
-        textarea {
-          font-size: 20px;
-        }
-
-        #nome {
-          height: 50px;
-          padding: 16px;
-        }
-
-        #msg {
-          height: 180px;
-        }
-
-        button {
-          font-size: 20px;
-          width: 200px;
-          padding: 14px 24px;
-        }
+      .card-label {
+        font-size: 0.85rem;
       }
+
+      .card-value {
+        font-size: 1.05rem;
+      }
+    }
+
+    .contact-form {
+      max-width: 720px;
+    }
+
+    .input-group {
+      input,
+      textarea {
+        font-size: 1.05rem;
+        padding: 20px 18px 12px;
+      }
+
+      textarea {
+        min-height: 220px;
+      }
+
+      label {
+        font-size: 1.05rem;
+      }
+    }
+
+    .btn-send {
+      font-size: 1.1em;
+      padding: 14px 40px;
     }
   }
 }
 
-@media (max-width: 980px) {
-  #contato div nav {
-    display: flex;
-    width: 600px;
+@media (max-width: 768px) {
+  #contato {
+    padding: 30px 20px;
+
+    > div {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-cards {
+      order: 2;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .contact-form {
+      order: 1;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #contato {
+    h2 {
+      font-size: 33px;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      margin-bottom: 36px;
+    }
+
+    .contact-card {
+      padding: 14px 16px;
+
+      .card-icon {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        font-size: 17px;
+        border-radius: 12px;
+      }
+
+      .card-label {
+        font-size: 0.7rem;
+      }
+
+      .card-value {
+        font-size: 0.85rem;
+      }
+    }
+
+    .input-group {
+      input,
+      textarea {
+        font-size: 0.9rem;
+        padding: 16px 14px 10px;
+      }
+
+      textarea {
+        min-height: 140px;
+      }
+
+      label {
+        font-size: 0.9rem;
+      }
+    }
+
+    .btn-send {
+      font-size: 0.95em;
+      padding: 10px 28px;
+      width: 100%;
+      justify-content: center;
+    }
   }
 }
