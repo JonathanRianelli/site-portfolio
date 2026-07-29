@@ -200,7 +200,7 @@ export default function Projetos() {
       ) : (
         <div className="projetos-grid fade-up">
           {projetos.map((projeto, index) => (
-            <div key={index}>{renderCard(projeto)}</div>
+            <div className="projeto-grid-item" key={index}>{renderCard(projeto)}</div>
           ))}
         </div>
       )}

@@ -7,9 +7,7 @@ $azulClaro: #6ec3f4;
 // GLASS CARD MIXIN
 // ============================================
 @mixin glass-card {
-  background: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: #171717;
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 16px;
 }
@@ -43,6 +41,10 @@ $azulClaro: #6ec3f4;
   }
 
   // ========== CARD ==========
+  .projeto-grid-item {
+    display: flex;
+  }
+
   .projeto-card {
     @include glass-card;
     display: flex;
@@ -53,6 +55,7 @@ $azulClaro: #6ec3f4;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    height: 100%;
 
     // Glow sutil na borda superior
     &::before {
@@ -71,7 +74,6 @@ $azulClaro: #6ec3f4;
     &:hover {
       transform: translateY(-6px);
       border-color: rgba($azulClaro, 0.15);
-      background: rgba(255, 255, 255, 0.035);
       box-shadow:
         0 12px 40px rgba(0, 0, 0, 0.3),
         0 0 30px rgba($azulEscuro, 0.08);
