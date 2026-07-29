@@ -45,20 +45,6 @@ export default function Projetos() {
 
   const projetos = [
     {
-      titulo: "Landing Page VZ-CELL",
-      descricao:
-        "Desenvolvi esta landing page para a VZ CELL, uma loja de manutenção de celulares localizada na Praia Grande, SP. O site apresenta as principais informações sobre a loja, incluindo serviços prestados, produtos e formas de contato. Com um design responsivo e intuitivo, proporciona uma experiência fácil e eficiente para os clientes.",
-      imagem: vzCell,
-      alt: "VZ CELL",
-      tecnologias: [
-        { icone: "devicon-html5-plain colored", nome: "HTML" },
-        { icone: "devicon-css3-plain colored", nome: "CSS" },
-        { icone: "devicon-javascript-plain colored", nome: "JavaScript" },
-      ],
-      url: "https://www.vzcell.com.br/",
-      tipo: "site",
-    },
-    {
       titulo: "Landing Page Grupo Project",
       descricao:
         "Desenvolvi a landing page institucional do Grupo Project, apresentando seus serviços de consultoria empresarial, soluções tecnológicas e automação de processos. O site foi projetado com foco em conversão, reunindo um design moderno, responsivo e interativo para transmitir credibilidade e proporcionar uma experiência de navegação intuitiva.",
@@ -70,6 +56,20 @@ export default function Projetos() {
         { icone: "devicon-javascript-plain colored", nome: "JavaScript" },
       ],
       url: "https://projectgrupo.com.br/",
+      tipo: "site",
+    },
+    {
+      titulo: "Landing Page VZ-CELL",
+      descricao:
+        "Desenvolvi a landing page institucional da VZ CELL, uma assistência técnica especializada em smartphones localizada na Praia Grande, SP. O site foi desenvolvido com foco em conversão, apresentando seus serviços, produtos e canais de contato em uma interface moderna, responsiva e intuitiva, proporcionando uma experiência de navegação agradável aos clientes.",
+      imagem: vzCell,
+      alt: "VZ CELL",
+      tecnologias: [
+        { icone: "devicon-html5-plain colored", nome: "HTML" },
+        { icone: "devicon-css3-plain colored", nome: "CSS" },
+        { icone: "devicon-javascript-plain colored", nome: "JavaScript" },
+      ],
+      url: "https://www.vzcell.com.br/",
       tipo: "site",
     },
     {

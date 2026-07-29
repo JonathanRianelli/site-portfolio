@@ -257,8 +257,8 @@ $azulClaro: #6ec3f4;
         }
       }
 
-      // No hover, esconde o placeholder inteiro (evita conflito visual)
-      &:hover .img-placeholder {
+      // No hover, esconde apenas o ícone, mantendo o fundo gradiente visível
+      &:hover .img-placeholder .placeholder-icon {
         opacity: 0;
         transition: opacity 0.2s ease;
       }
